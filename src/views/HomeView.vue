@@ -13,7 +13,7 @@
           </div>
         </div>
         <div class="mouse">
-          <img src="../assets/images/mouse.png" alt="" />
+          <img src="../assets/images/mouse.gif" alt="" />
         </div>
       </div>
     </div>
@@ -23,22 +23,47 @@
         <div class="summary-title-content">
           <div class="title">Core Advantages</div>
 
-          <div class="title-context">
-            Our superiority is particularly evident in multimodal medical
-            analysis and
+          <div class="title-context pc-text">
+            <span class="line"
+              >Our superiority is particularly evident in multimodal medical
+              analysis and
+            </span>
+            <span class="line"
+              >image recognition.By leveraging extensive medical knowledge bases
+              and</span
+            >
+            <span class="line">
+              databases through large language models,we can establish a
+              comprehensive</span
+            >
+            <span class="line"> medical decision support system.</span>
           </div>
-          <div class="title-context">
-            image recognition.By leveraging extensive medical knowledge bases
-            and
+          <div class="title-context mobile-text">
+            <span class="line"
+              >Our superiority is particularly evident in multimodal
+              medical</span
+            >
+            <span class="line">
+              analysis and image recognition. By leveraging extensive
+              medical</span
+            >
+            <span class="line">
+              knowledge bases and databases through large language</span
+            >
+            <span class="line">
+              models, we can establish a comprehensive medical decision</span
+            >
+            <span class="line"> support system.</span>
           </div>
-          <div class="title-context">
-            databases through large language models, we can establish a
-            comprehensive
-          </div>
-          <div class="title-context">medical decision support system.</div>
         </div>
         <div class="summary-img">
-          <img src="../assets/images/summary.png" alt="" />
+          <picture>
+            <source
+              srcset="../assets/images/summary_mobile.png"
+              media="(max-width: 768px)"
+            />
+            <img src="../assets/images/summary.png" alt="Summary Image" />
+          </picture>
         </div>
         <div class="summary-content-box">
           <div class="summary-content">
@@ -83,11 +108,8 @@
           </div>
         </div>
         <div class="solution-content-box">
-          <div class="solution-content">
-            <img src="../assets/images/summary1.png" alt="" class="icon" />
-
+          <div class="solution-content solution-content-1">
             <div class="content">Clinical Diagnosis and Treatment</div>
-
             <div class="solution-content-hover">
               <div class="title">Clinical Diagnosis and Treatment</div>
               <div class="context">
@@ -105,10 +127,8 @@
               </div>
             </div>
           </div>
-          <div class="solution-content">
-            <img src="../assets/images/summary2.png" alt="" class="icon" />
+          <div class="solution-content solution-content-2">
             <div class="content">Patient Services</div>
-
             <div class="solution-content-hover">
               <div class="title">Patient Services</div>
               <div class="context">
@@ -431,7 +451,6 @@ import { useRouter } from "vue-router";
   .summary-title-content {
     position: absolute;
     top: 282px;
-    // left: 190px;
     width: 588px;
     height: 160px;
 
@@ -445,22 +464,52 @@ import { useRouter } from "vue-router";
       padding-bottom: 24px;
     }
     .title-context {
+      display: block;
       color: #152641;
       font-family: "Montserrat";
       font-size: 14px;
     }
+
+    .pc-text,
+    .mobile-text {
+      display: none;
+    }
+
+    @media (min-width: 769px) {
+      .pc-text {
+        display: block;
+      }
+      .pc-text .line {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+    @media (max-width: 768px) {
+      .mobile-text {
+        display: block;
+      }
+      .mobile-text .line {
+        display: inline-block;
+        width: 100%;
+      }
+    }
   }
+
   .summary-img {
     position: absolute;
     top: 180px;
     right: 0px;
+
+    img {
+      max-width: 582px;
+      max-height: 472px;
+    }
   }
+
   .summary-content-box {
     position: absolute;
     top: 522px;
-    // left: 180px;
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
     gap: 17px;
 
@@ -475,6 +524,7 @@ import { useRouter } from "vue-router";
       justify-content: center;
       align-items: center;
       gap: 31px;
+
       .icon {
         width: 100px;
         height: 100px;
@@ -491,30 +541,32 @@ import { useRouter } from "vue-router";
     }
   }
 }
+
 .solution {
   background-color: #d8dff0;
   width: 100%;
-  height: 792px;
   padding-bottom: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
   .solution-title-content {
     margin-top: 120px;
     margin-bottom: 56px;
+    text-align: center;
+
     .title {
       font-family: "Montserrat";
       font-weight: 700;
       font-size: 58px;
       color: #000000;
       line-height: 48px;
-      text-align: center;
       margin-bottom: 24px;
     }
+
     .title-context {
       font-family: "Montserrat";
-      text-align: center;
       font-weight: 400;
       font-size: 14px;
       color: rgba(21, 38, 65, 0.4);
@@ -524,42 +576,9 @@ import { useRouter } from "vue-router";
   .solution-content-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 120px;
     gap: 16px;
-    .solution-content:hover .solution-content-hover {
-      display: flex;
-      opacity: 1;
-    }
+    padding-bottom: 120px;
 
-    .solution-content-hover {
-      display: none;
-      height: auto;
-      background: #1c53e8;
-      border-radius: 12px;
-      position: absolute;
-      height: 380px;
-      width: 652px;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      .title {
-        font-family: "Montserrat-medium";
-        font-weight: 500;
-        font-size: 24px;
-        color: #ffffff;
-        line-height: 24px;
-        text-align: center;
-      }
-      .context {
-        font-family: "Montserrat";
-        font-weight: 400;
-        font-size: 14px;
-        color: rgba(255, 255, 255, 0.6);
-        line-height: 22px;
-        text-align: center;
-        margin-top: 24px;
-      }
-    }
     .solution-content {
       display: flex;
       height: auto;
@@ -567,7 +586,17 @@ import { useRouter } from "vue-router";
       border-radius: 25px;
       position: relative;
       height: 380px;
-      width: 652px;
+      width: 100%;
+      &.solution-content-1 {
+        background-image: url("../assets/images/solution1.png");
+        background-size: cover;
+        background-position: center;
+      }
+      &.solution-content-2 {
+        background-image: url("../assets/images/solution2.png");
+        background-size: cover;
+        background-position: center;
+      }
       .img {
         width: 100%;
         height: 100%;
@@ -577,6 +606,7 @@ import { useRouter } from "vue-router";
         background-position: center;
         border-radius: 12px;
       }
+
       .content {
         position: absolute;
         font-family: "Montserrat";
@@ -591,8 +621,45 @@ import { useRouter } from "vue-router";
         width: 100%;
       }
     }
+
+    .solution-content-hover {
+      display: none;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background: #1c53e8;
+      border-radius: 12px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .title {
+        font-family: "Montserrat-medium";
+        font-weight: 500;
+        font-size: 24px;
+        color: #ffffff;
+        line-height: 24px;
+        text-align: center;
+      }
+
+      .context {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 22px;
+        text-align: center;
+        margin-top: 24px;
+      }
+    }
+
+    .solution-content:hover .solution-content-hover {
+      display: flex;
+      opacity: 1;
+    }
   }
 }
+
 .feature-list {
   padding: 80px 127px;
 
@@ -680,69 +747,410 @@ import { useRouter } from "vue-router";
     }
   }
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 2fr);
   gap: 16px;
+
+  .grid-item {
+    background: #eaf2fc;
+    border-radius: 10px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    width: 100%; // 设置宽度为100%以适应父容器
+
+    img {
+      width: 180px;
+      height: auto;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      object-fit: cover;
+    }
+
+    .p1,
+    .p2 {
+      position: absolute;
+      left: 56px;
+      font-family: "Montserrat-Bold";
+      font-weight: 700;
+      font-size: 24px;
+      color: #000000;
+      line-height: 32px;
+      text-align: left;
+    }
+
+    .p1 {
+      top: 48px;
+    }
+
+    .p2 {
+      top: 80px;
+    }
+
+    .grid-item-hover {
+      font-family: "Montserrat-Regular";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #1c53e8;
+      border-radius: 10px;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      flex-direction: column;
+      transition: opacity 0.3s ease;
+      color: white;
+    }
+
+    &:hover .grid-item-hover {
+      display: flex;
+      opacity: 1;
+    }
+  }
 }
 
-.grid-item {
-  background: #eaf2fc;
-  border-radius: 10px;
-  height: 200px;
-  width: 652px;
-  position: relative;
-  overflow: hidden;
-  img {
-    width: 180px;
+@media (max-width: 768px) {
+  .container {
+    width: 654px;
+    max-width: 100%;
+    height: 1560px;
+    position: relative;
+  }
+
+  .banner {
+    background-size: cover;
+    position: relative;
+    background-image: url("../assets/images/banner_mobile.png");
+
+    .banner-content {
+      left: 48px;
+      top: 452px;
+      width: 442px;
+      height: auto;
+      padding: 20px;
+      position: absolute;
+
+      .title {
+        width: 368px;
+        height: 64px;
+        font-family: "Montserrat-Bold";
+        font-size: 64px;
+        color: #1c53e8;
+        line-height: 69px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        text-align: left;
+        margin-bottom: 31px;
+      }
+
+      .title-content {
+        width: 442px;
+        font-family: "Montserrat-Regular";
+        font-size: 20px;
+        color: #000000;
+        line-height: 22px;
+        text-align: left;
+        font-weight: 400;
+      }
+    }
+
+    .mouse {
+      position: absolute;
+      bottom: -50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  .summary {
+    background-color: #eaf2fc;
+    width: 100%;
+    position: relative;
+    height: 1700px;
+
+    .summary-title-content {
+      position: absolute;
+      top: 120px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+
+      .title {
+        font-family: "Montserrat-Bold";
+        font-weight: 700;
+        font-size: 48px;
+        color: #000000;
+        line-height: 48px;
+        padding-bottom: 24px;
+        text-align: center;
+      }
+
+      .title-context {
+        color: rgba(21, 38, 65, 0.4);
+        font-family: "Montserrat";
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+      }
+    }
+
+    .summary-img {
+      position: absolute;
+      top: 367px;
+      right: 0;
+      margin-bottom: 20px;
+    }
+
+    .summary-content-box {
+      position: absolute;
+      top: 700px;
+      left: 50%;
+      width: 654px;
+      transform: translate(-50%, 0);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 17px;
+
+      .summary-content {
+        height: 278px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 25px;
+        padding: 40px 36px 40px 36px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 31px;
+
+        .icon {
+          width: 100px;
+          height: 100px;
+        }
+
+        .content {
+          font-family: "Montserrat";
+          font-weight: 400;
+          font-size: 24px;
+          color: rgba(21, 38, 65, 0.8);
+          line-height: 36px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .solution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 960px;
+
+    .solution-title-content {
+      margin-top: 120px;
+      margin-bottom: 56px;
+      text-align: center;
+
+      .title {
+        text-align: center;
+        font-family: "Montserrat-Bold";
+        font-weight: 700;
+        font-size: 48px;
+        color: #000000;
+        line-height: 48px;
+        margin-bottom: 24px;
+      }
+
+      .title-context {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 20px;
+        color: rgba(21, 38, 65, 0.4);
+        line-height: 30px;
+        text-align: center;
+      }
+    }
+
+    .solution-content-box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+
+      .solution-content {
+        display: flex;
+        background: #d8dff0;
+        border-radius: 25px;
+        position: relative;
+        max-width: 318px;
+        height: 430px;
+        width: 100%;
+
+        &.solution-content-1 {
+          background-image: url("../assets/images/solution1_mobile.png");
+          background-size: cover;
+          background-position: center;
+        }
+
+        &.solution-content-2 {
+          background-image: url("../assets/images/solution2_mobile.png");
+          background-size: cover;
+          background-position: center;
+        }
+
+        .content {
+          position: absolute;
+          font-family: "Montserrat";
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 24px;
+          font-weight: 500;
+          color: #ffffff;
+          line-height: 27px;
+          text-align: center;
+          width: 100%;
+        }
+      }
+
+      .solution-content-hover {
+        display: none;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #1c53e8;
+        border-radius: 12px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title {
+          font-family: "Montserrat-medium";
+          font-weight: 500;
+          font-size: 24px;
+          color: #ffffff;
+          line-height: 24px;
+          text-align: center;
+        }
+
+        .context {
+          font-family: "Montserrat";
+          font-weight: 400;
+          font-size: 14px;
+          color: rgba(255, 255, 255, 0.6);
+          line-height: 22px;
+          text-align: center;
+          margin-top: 24px;
+        }
+      }
+
+      .solution-content:hover .solution-content-hover {
+        display: flex;
+        opacity: 1;
+      }
+    }
+  }
+
+  .feature-list {
+    padding: 40px 20px;
+
+    .feature {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    .feature-desc {
+      padding: 20px 0;
+      text-align: center;
+      padding-left: 0;
+      padding-right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+
+      .title {
+        order: 1;
+      }
+
+      .feature-img-container {
+        order: 2;
+        width: 100%;
+        margin: 20px 0;
+        max-width: 652px;
+        max-height: 560px;
+      }
+
+      .content-title,
+      .content {
+        font-family: "Montserrat-Regular";
+        order: 3;
+        color: rgba(21, 38, 65, 0.4);
+      }
+    }
+
+    .feature:nth-of-type(odd) .feature-desc,
+    .feature:nth-of-type(even) .feature-desc {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .feature-img {
+      width: 100%;
+    }
+
+    .content-title,
+    .title,
+    .content {
+      text-align: center;
+    }
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 654px;
+  }
+
+  .grid-item {
+    width: 100%;
     height: auto;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    object-fit: cover;
+    margin-bottom: 20px;
   }
-  .p1,
-  .p2 {
-    position: absolute;
-    left: 56px;
-    font-family: "Montserrat-Bold";
-    font-weight: 700;
-    font-size: 24px;
-    color: #000000;
-    line-height: 32px;
-    text-align: left;
-  }
-  .p1 {
-    top: 48px;
-  }
-  .p2 {
-    top: 80px;
-  }
-}
 
-.grid-item-hover {
-  font-family: "Montserrat-Regular";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #1c53e8;
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  flex-direction: column;
-  transition: opacity 0.3s ease;
-  color: white;
-}
+  .grid-item img {
+    width: 100%;
+    object-fit: contain;
+  }
 
-.grid-item:hover .grid-item-hover {
-  display: flex;
-  opacity: 1;
+  .grid-item .p1,
+  .grid-item .p2 {
+    left: 10px;
+    text-align: center;
+    width: calc(100% - 20px);
+  }
+
+  .grid-item .p1 {
+    top: 20px;
+  }
+
+  .grid-item .p2 {
+    top: 100px;
+  }
+
+  .grid-item-hover {
+    text-align: center;
+    padding: 20px;
+  }
 }
 </style>
