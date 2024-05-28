@@ -13,7 +13,7 @@
           </div>
         </div>
         <div class="mouse">
-          <img src="src/assets/images" alt="" />
+          <img src="../assets/images/mouse.png" alt="" />
         </div>
       </div>
     </div>
@@ -412,6 +412,11 @@ import { useRouter } from "vue-router";
     }
   }
   .mouse {
+    position: absolute;
+    position: absolute;
+    bottom: -60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 36px;
     height: 36px;
   }
