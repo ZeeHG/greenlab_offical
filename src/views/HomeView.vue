@@ -1,318 +1,378 @@
 <template>
   <main>
     <div class="banner">
-      <div class="banner-content">
-        <div class="title">miti.health</div>
-        <div class="title-content">
-          miti.health aims to provide users with a secure, accurate, efficient
-          and convenient
+      <div class="container">
+        <div class="banner-content">
+          <div class="title">miti.health</div>
+          <div class="title-content">
+            miti.health aims to provide users with a secure, accurate, efficient
+            and convenient
+          </div>
+          <div class="title-content">
+            online personalized healthcare solution.
+          </div>
         </div>
-        <div class="title-content">
-          online personalized healthcare solution.
+        <div class="mouse">
+          <img src="src/assets/images" alt="" />
         </div>
-      </div>
-      <div class="mouse">
-        <img src="src/assets/images" alt="" />
       </div>
     </div>
+
     <div class="summary">
-      <div class="summary-title-content">
-        <div class="title">Core Advantages</div>
+      <div class="container">
+        <div class="summary-title-content">
+          <div class="title">Core Advantages</div>
 
-        <div class="title-context">
-          Our superiority is particularly evident in multimodal medical analysis
-          and
-        </div>
-        <div class="title-context">
-          image recognition.By leveraging extensive medical knowledge bases and
-        </div>
-        <div class="title-context">
-          databases through large language models, we can establish a
-          comprehensive
-        </div>
-        <div class="title-context">medical decision support system.</div>
-      </div>
-      <div class="summary-img">
-        <img src="../assets/images/summary.png" alt="" />
-      </div>
-      <div class="summary-content-box">
-        <div class="summary-content">
-          <img src="../assets/images/1a@1x.png" alt="" class="icon" />
-
-          <div class="content">
-            A multilingual, responsive, secure, and reliable online healthcare
-            platform
+          <div class="title-context">
+            Our superiority is particularly evident in multimodal medical
+            analysis and
           </div>
-        </div>
-        <div class="summary-content">
-          <img src="../assets/images/2a@1x.png" alt="" class="icon" />
-
-          <div class="content">
-            Proprietary large-scale medical models tailored for the healthcare
-            industry
+          <div class="title-context">
+            image recognition.By leveraging extensive medical knowledge bases
+            and
           </div>
+          <div class="title-context">
+            databases through large language models, we can establish a
+            comprehensive
+          </div>
+          <div class="title-context">medical decision support system.</div>
         </div>
-        <div class="summary-content">
-          <img src="../assets/images/3a@1x.png" alt="" class="icon" />
+        <div class="summary-img">
+          <img src="../assets/images/summary.png" alt="" />
+        </div>
+        <div class="summary-content-box">
+          <div class="summary-content">
+            <img src="../assets/images/1a@1x.png" alt="" class="icon" />
 
-          <div class="content">
-            Strong large language models and a talent pool with
-            interdisciplinary expertise in medicine
+            <div class="content">
+              A multilingual, responsive, secure, and reliable online healthcare
+              platform
+            </div>
+          </div>
+          <div class="summary-content">
+            <img src="../assets/images/2a@1x.png" alt="" class="icon" />
+
+            <div class="content">
+              Proprietary large-scale medical models tailored for the healthcare
+              industry
+            </div>
+          </div>
+          <div class="summary-content">
+            <img src="../assets/images/3a@1x.png" alt="" class="icon" />
+
+            <div class="content">
+              Strong large language models and a talent pool with
+              interdisciplinary expertise in medicine
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="solution">
-      <div class="solution-title-content">
-        <div class="title">Our Solution</div>
+      <div class="container">
+        <div class="solution-title-content">
+          <div class="title">Our Solution</div>
 
-        <div class="title-context">
-          miti.health is an online comprehensive platform utilizing the latest
-          AI technology to support medical diagnosis,
-        </div>
-        <div class="title-context">
-          treatment recommendations and patient management.
-        </div>
-      </div>
-      <div class="solution-content-box">
-        <div class="solution-content">
-          <img src="../assets/images/summary1.png" alt="" class="icon" />
-
-          <div class="content">Clinical Diagnosis and Treatment</div>
-
-          <div class="solution-content-hover">
-            <div class="title">Clinical Diagnosis and Treatment</div>
-            <div class="context">
-              <p>
-                Supporting automatic medical record generation, medical record
-              </p>
-              <p>
-                quality control, and providing auxiliary diagnostic and
-                treatment
-              </p>
-              <p>
-                suggestions can effectively reduce the workload of clinical
-                doctors.
-              </p>
-            </div>
+          <div class="title-context">
+            miti.health is an online comprehensive platform utilizing the latest
+            AI technology to support medical diagnosis,
+          </div>
+          <div class="title-context">
+            treatment recommendations and patient management.
           </div>
         </div>
-        <div class="solution-content">
-          <img src="../assets/images/summary2.png" alt="" class="icon" />
-          <div class="content">Patient Services</div>
+        <div class="solution-content-box">
+          <div class="solution-content">
+            <img src="../assets/images/summary1.png" alt="" class="icon" />
 
-          <div class="solution-content-hover">
-            <div class="title">Patient Services</div>
-            <div class="context">
-              <p>
-                Writing consultation conclusions based on diagnostic information
-              </p>
-              <p>
-                such as the patient's disease characteristics, overall physical
-                condition,
-              </p>
-              <p>
-                and objective conditions, followed by a review by outpatient
-                experts,
-              </p>
-              <p>supports doctors in correcting Al diagnostic results during</p>
-              <p>
-                consultations.This process provides more
-                scientific,standardized, and
-              </p>
-              <p>high precision individualized treatment plans.</p>
+            <div class="content">Clinical Diagnosis and Treatment</div>
+
+            <div class="solution-content-hover">
+              <div class="title">Clinical Diagnosis and Treatment</div>
+              <div class="context">
+                <p>
+                  Supporting automatic medical record generation, medical record
+                </p>
+                <p>
+                  quality control, and providing auxiliary diagnostic and
+                  treatment
+                </p>
+                <p>
+                  suggestions can effectively reduce the workload of clinical
+                  doctors.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="solution-content">
+            <img src="../assets/images/summary2.png" alt="" class="icon" />
+            <div class="content">Patient Services</div>
+
+            <div class="solution-content-hover">
+              <div class="title">Patient Services</div>
+              <div class="context">
+                <p>
+                  Writing consultation conclusions based on diagnostic
+                  information
+                </p>
+                <p>
+                  such as the patient's disease characteristics, overall
+                  physical condition,
+                </p>
+                <p>
+                  and objective conditions, followed by a review by outpatient
+                  experts,
+                </p>
+                <p>
+                  supports doctors in correcting Al diagnostic results during
+                </p>
+                <p>
+                  consultations.This process provides more
+                  scientific,standardized, and
+                </p>
+                <p>high precision individualized treatment plans.</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="feature-list">
-      <div class="feature">
-        <div class="feature-desc">
-          <div class="title">Quick Consultation</div>
-          <div>
-            <div class="content-title">Quick online consultation</div>
+      <div class="container">
+        <div class="feature">
+          <div class="feature-desc">
+            <div class="title">Quick Consultation</div>
+            <div>
+              <div class="content-title">Quick online consultation</div>
+              <div class="content">
+                <p>
+                  miti.health provides an online quick consultation channel,
+                </p>
+                <p>combining Al assistant triage with professional doctor</p>
+                <p>
+                  consultations to diagnose individual diseases more
+                  scientifically
+                </p>
+                <p>and conveniently.</p>
+              </div>
+            </div>
+            <div>
+              <div class="content-title">7*24 hours fast service</div>
+              <div class="content">The platform offers 7*24 quick response</div>
+            </div>
+            <div>
+              <div class="content-title">Support 60+languages</div>
+              <div class="content">
+                <p>
+                  miti.health supports over 60 languages globally, utilizes
+                  natural
+                </p>
+                <p>
+                  language interaction,and features a simple and user-friendly
+                </p>
+                <p>interface,comprehensively enhancing the patient's online</p>
+                <p>medical experience.</p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-img-container">
+            <img src="../assets/images/1.gif" alt="" class="feature-img" />
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-img-container">
+            <img src="../assets/images/2.gif" alt="" class="feature-img" />
+          </div>
+          <div class="feature-desc">
+            <div class="title">Online Prescription</div>
             <div class="content">
-              miti.health provides an online quick consultation
-              channel,combining Al assistant triage with professional doctor
-              consultations to diagnose individual diseases more scientifically
-              and conveniently.
+              <p>
+                miti.health supports users in obtaining online prescriptions
+              </p>
+              <p>through the platform.</p>
             </div>
-          </div>
-          <div>
-            <div class="content-title">7*24 hours fast service</div>
-            <div class="content">The platform offers 7*24 quick response</div>
-          </div>
-          <div>
-            <div class="content-title">Support 60+languages</div>
             <div class="content">
-              miti.health supports over 60 languages globally, utilizes natural
-              language interaction,and features a simple and user-friendly
-              interface,comprehensively enhancing the patient's online medical
-              experience.
+              <p>The Al large model assists doctors in decision-making</p>
+              <p>
+                by enhancing the accuracy and personalization of prescriptions,
+              </p>
+              <p>while also improving medical efficiency and patient safety.</p>
             </div>
           </div>
         </div>
-        <div class="feature-img-container">
-          <img src="../assets/images/1.gif" alt="" class="feature-img" />
-        </div>
-      </div>
-      <div class="feature">
-        <div class="feature-img-container">
-          <img src="../assets/images/2.gif" alt="" class="feature-img" />
-        </div>
-        <div class="feature-desc">
-          <div class="title">Online Prescription</div>
-          <div class="content">
-            miti.health supports users in obtaining online prescriptions through
-            the platform.
+        <div class="grid-container">
+          <div class="grid-item">
+            <img
+              src="../assets/images/grid1.png"
+              alt="Automated Medication Review"
+            />
+            <p class="p1">Automated Medication Review</p>
+            <div class="grid-item-hover">
+              <div class="text">
+                <p>
+                  Based on patients' medical history, current health status, and
+                  personal habits, the AI
+                </p>
+                <p>
+                  large model can aid doctors in making decisions about
+                  medication and dosage
+                </p>
+                <p>
+                  optimization, improving treatment outcomes and reducing
+                  adverse effects.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="content">
-            The Al large model assists doctors in decision-making by enhancing
-            the accuracy and personalization of prescriptions while also
-            improving medical efficiency and patient safety.
+
+          <div class="grid-item">
+            <img
+              src="../assets/images/grid2.png"
+              alt="Personalized Medication Recommendations"
+            />
+            <p class="p1">Personalized Medication</p>
+            <p class="p2">Recommendations</p>
+            <div class="grid-item-hover">
+              <div class="text">
+                <p>
+                  The Al large model automatically checks patients' medication
+                  lists, identifying
+                </p>
+                <p>
+                  potential drug interactions, dosage errors, or allergy risks,
+                  helping to prevent
+                </p>
+                <p>medication errors and enhance patient safety.</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="grid-container">
-        <div class="grid-item">
-          <img
-            src="../assets/images/grid1.png"
-            alt="Automated Medication Review"
-          />
-          <p class="p1">Automated Medication Review</p>
-          <div class="grid-item-hover">
-            <div class="text">
-              <p>
-                Based on patients' medical history, current health status, and
-                personal habits, the AI
-              </p>
-              <p>
-                large model can aid doctors in making decisions about medication
-                and dosage
-              </p>
-              <p>
-                optimization, improving treatment outcomes and reducing adverse
-                effects.
-              </p>
+
+          <div class="grid-item">
+            <img
+              src="../assets/images/grid3.png"
+              alt="Monitoring and Adjusting Treatment Effectiveness"
+            />
+            <p class="p1">Monitoring and Adjusting Treatment</p>
+            <p class="p2">Effectiveness</p>
+            <div class="grid-item-hover">
+              <div class="text">
+                <p>
+                  The Al large model automatically checks patients' medication
+                  lists, identifying
+                </p>
+                <p>
+                  potential drug interactions, dosage errors, or allergy risks,
+                  helping to prevent
+                </p>
+                <p>medication errors and enhance patient safety.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-item">
+            <img
+              src="../assets/images/grid4.png"
+              alt="Smart Reminders and Patient Management"
+            />
+            <p class="p1">Smart Reminders and Patient</p>
+            <p class="p2">Management</p>
+            <div class="grid-item-hover">
+              <div class="text">
+                <p>
+                  The Al large model can set up reminder systems to prompt
+                  doctors to review and
+                </p>
+                <p>
+                  update prescriptions in a timely manner, This is particularly
+                  important for chronic
+                </p>
+                <p>disease patients who need regular treatment</p>
+                <p>
+                  adjustments. Additionally, the Al large model can generate
+                  educational materials for
+                </p>
+                <p>patients,explaining the purpose of medications, correct</p>
+                <p>
+                  usage methods, and possible side effects, thereby enhancing
+                  patients' understanding
+                </p>
+                <p>and adherence to treatment plans.</p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="grid-item">
-          <img
-            src="../assets/images/grid2.png"
-            alt="Personalized Medication Recommendations"
-          />
-          <p class="p1">Personalized Medication</p>
-          <p class="p2">Recommendations</p>
-          <div class="grid-item-hover">
-            <div class="text">
+        <div class="feature">
+          <div class="feature-desc">
+            <div class="title">Al Search</div>
+            <div class="content">
               <p>
-                The Al large model automatically checks patients' medication
-                lists, identifying
+                miti.health provides users with an intelligent Al search engine
+                that
               </p>
               <p>
-                potential drug interactions, dosage errors, or allergy risks,
-                helping to prevent
+                delivers precise and relevant medical information based on user
               </p>
-              <p>medication errors and enhance patient safety.</p>
+              <p>
+                queries, enhancing the efficiency and quality of medical
+                knowledge
+              </p>
+              <p>acquisition.</p>
+            </div>
+            <div class="content">
+              <P
+                >Utilizing our proprietary large-scale medical models, the
+                search
+              </P>
+              <P>engine comprehends complex medical inquiries and provides</P>
+              <P>
+                accurate search results, facilitating the conversion between
+                medical</P
+              >
+              <P>
+                terminology and everyday language. This ensures that even
+                users</P
+              >
+              <P>
+                without professional medical knowledge can easily use the
+                search</P
+              >
+              <P> engine.</P>
+            </div>
+            <div class="content">
+              <p>
+                Multilingual support allows non-English speaking users to
+                effectively
+              </p>
+              <p>utilize the search engine as well.</p>
             </div>
           </div>
-        </div>
-
-        <div class="grid-item">
-          <img
-            src="../assets/images/grid3.png"
-            alt="Monitoring and Adjusting Treatment Effectiveness"
-          />
-          <p class="p1">Monitoring and Adjusting Treatment</p>
-          <p class="p2">Effectiveness</p>
-          <div class="grid-item-hover">
-            <div class="text">
-              <p>
-                The Al large model automatically checks patients' medication
-                lists, identifying
-              </p>
-              <p>
-                potential drug interactions, dosage errors, or allergy risks,
-                helping to prevent
-              </p>
-              <p>medication errors and enhance patient safety.</p>
-            </div>
+          <div class="feature-img-container">
+            <img src="../assets/images/3.gif" alt="" class="feature-img" />
           </div>
-        </div>
-
-        <div class="grid-item">
-          <img
-            src="../assets/images/grid4.png"
-            alt="Smart Reminders and Patient Management"
-          />
-          <p class="p1">Smart Reminders and Patient</p>
-          <p class="p2">Management</p>
-          <div class="grid-item-hover">
-            <div class="text">
-              <p>
-                The Al large model can set up reminder systems to prompt doctors
-                to review and
-              </p>
-              <p>
-                update prescriptions in a timely manner, This is particularly
-                important for chronic
-              </p>
-              <p>disease patients who need regular treatment</p>
-              <p>
-                adjustments. Additionally, the Al large model can generate
-                educational materials for
-              </p>
-              <p>patients,explaining the purpose of medications, correct</p>
-              <p>
-                usage methods, and possible side effects, thereby enhancing
-                patients' understanding
-              </p>
-              <p>and adherence to treatment plans.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="feature">
-        <div class="feature-desc">
-          <div class="title">Al Search</div>
-          <div class="content">
-            miti.health provides users with an intelligent Al search engine that
-            delivers precise and relevant medical information based on user
-            queries, enhancing the efficiency and quality of medical knowledge
-            acquisition.
-          </div>
-          <div class="content">
-            Utilizing our proprietary large-scale medical models, the search
-            engine comprehends complex medical inquiries and provides accurate
-            search results, facilitating the conversion between medical
-            terminology and everyday language. This ensures that even users
-            without professional medical knowledge can easily use the search
-            engine.
-          </div>
-          <div class="content">
-            Multilingual support allows non-English speaking users to
-            effectively utilize the search engine as well.
-          </div>
-        </div>
-        <div class="feature-img-container">
-          <img src="../assets/images/3.gif" alt="" class="feature-img" />
         </div>
       </div>
     </div>
   </main>
 </template>
 <script setup lang="ts">
-import { ref } from "vue";
+// import { ref } from "vue";
 import { useRouter } from "vue-router";
 
-const router = useRouter();
+// const router = useRouter();
 </script>
 
 <style scoped lang="less">
+.container {
+  width: 1320px;
+  max-width: 1320px;
+  height: 560px;
+  margin: auto auto;
+  position: relative;
+  // display: flex;
+}
 .banner {
   position: relative;
   width: 100%;
@@ -321,10 +381,11 @@ const router = useRouter();
   background-image: url("../assets/images/banner.png");
   background-size: cover;
   background-position: center;
+
   .banner-content {
     position: absolute;
     top: 386px;
-    left: 200px;
+    // left: 200px;
     width: 690px;
     height: 100%;
     justify-content: center;
@@ -365,7 +426,7 @@ const router = useRouter();
   .summary-title-content {
     position: absolute;
     top: 282px;
-    left: 190px;
+    // left: 190px;
     width: 588px;
     height: 160px;
 
@@ -387,12 +448,12 @@ const router = useRouter();
   .summary-img {
     position: absolute;
     top: 180px;
-    right: 160px;
+    right: 0px;
   }
   .summary-content-box {
     position: absolute;
     top: 522px;
-    left: 180px;
+    // left: 180px;
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
@@ -429,6 +490,7 @@ const router = useRouter();
   background-color: #d8dff0;
   width: 100%;
   height: 792px;
+  padding-bottom: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -457,7 +519,7 @@ const router = useRouter();
   .solution-content-box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 120px;
+    padding-bottom: 120px;
     gap: 16px;
     .solution-content:hover .solution-content-hover {
       display: flex;
@@ -538,13 +600,18 @@ const router = useRouter();
 
     &:nth-of-type(odd) {
       .feature-desc {
-        padding-right: 94px;
+        padding-right: 129px;
       }
     }
 
     &:nth-of-type(even) {
       .feature-desc {
-        padding-left: 94px;
+        padding-left: 129px;
+      }
+      &:last-child {
+        .feature-desc {
+          padding-left: 0px;
+        }
       }
     }
 
@@ -552,7 +619,8 @@ const router = useRouter();
       flex: 1 1 50%;
       min-width: 0;
       position: relative;
-
+      border-radius: 20px;
+      overflow: hidden;
       &::after {
         content: "";
         width: 100%;
@@ -596,6 +664,7 @@ const router = useRouter();
       }
 
       .content {
+        font-family: "Montserrat-Regular";
         font-weight: 400;
         max-width: 551px;
         font-size: 16px;
@@ -618,12 +687,14 @@ const router = useRouter();
   height: 200px;
   width: 652px;
   position: relative;
+  overflow: hidden;
   img {
     width: 180px;
     height: auto;
     position: absolute;
     right: 0;
     bottom: 0;
+    object-fit: cover;
   }
   .p1,
   .p2 {
@@ -645,6 +716,10 @@ const router = useRouter();
 }
 
 .grid-item-hover {
+  font-family: "Montserrat-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
   display: none;
   position: absolute;
   top: 0;
