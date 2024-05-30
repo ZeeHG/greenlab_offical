@@ -12,9 +12,9 @@
             online personalized healthcare solution.
           </div>
         </div>
-        <div class="mouse">
+        <!-- <div class="mouse">
           <img src="../assets/images/mouse.gif" alt="" />
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -308,17 +308,19 @@
                   update prescriptions in a timely manner, This is particularly
                   important for chronic
                 </p>
-                <p>disease patients who need regular treatment</p>
                 <p>
-                  adjustments. Additionally, the Al large model can generate
-                  educational materials for
+                  disease patients who need regular treatment adjustments.
+                  Additionally, the Al large
                 </p>
-                <p>patients,explaining the purpose of medications, correct</p>
                 <p>
-                  usage methods, and possible side effects, thereby enhancing
-                  patients' understanding
+                  model can generate educational materials for
+                  patients,explaining the purpose of
                 </p>
-                <p>and adherence to treatment plans.</p>
+                <p>
+                  medications, correct usage methods, and possible side effects,
+                  thereby enhancing
+                </p>
+                <p>patients' understanding and adherence to treatment plans.</p>
               </div>
             </div>
           </div>
