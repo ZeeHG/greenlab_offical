@@ -3,27 +3,20 @@
     <div class="banner">
       <div class="container">
         <div class="banner-content">
-          <div class="title">miti.health</div>
-          <div class="title-content">
-            miti.health aims to provide users with a secure, accurate, efficient
-            and convenient
-          </div>
-          <div class="title-content">
-            online personalized healthcare solution.
-          </div>
+          <div class="title">知学移民</div>
+          <div class="title">启程专业移民之路</div>
+          <div class="title-content">联系方式： 微信：zhixuezixunxiaolv</div>
+          <div class="title-content">邮箱：usgreenlab@gmail.com</div>
         </div>
-        <!-- <div class="mouse">
-          <img src="../assets/images/mouse.gif" alt="" />
-        </div> -->
       </div>
     </div>
 
     <div class="summary">
       <div class="container">
         <div class="summary-title-content">
-          <div class="title">Core Advantages</div>
+          <div class="title">创始人故事</div>
 
-          <div class="title-context pc-text">
+          <!-- <div class="title-context pc-text">
             <span class="line"
               >Our superiority is particularly evident in multimodal medical
               analysis and
@@ -37,8 +30,8 @@
               comprehensive</span
             >
             <span class="line"> medical decision support system.</span>
-          </div>
-          <div class="title-context mobile-text">
+          </div> -->
+          <!-- <div class="title-context mobile-text">
             <span class="line"
               >Our superiority is particularly evident in multimodal
               medical</span
@@ -54,40 +47,33 @@
               models, we can establish a comprehensive medical decision</span
             >
             <span class="line"> support system.</span>
-          </div>
+          </div> -->
         </div>
-        <div class="summary-img">
-          <picture>
-            <source
-              srcset="../assets/images/summary_mobile.png"
-              media="(max-width: 768px)"
-            />
-            <img src="../assets/images/summary.png" alt="Summary Image" />
-          </picture>
-        </div>
+
         <div class="summary-content-box">
           <div class="summary-content">
-            <img src="../assets/images/1a@1x.png" alt="" class="icon" />
+            <img src="../assets/images/founder1.png" alt="" class="icon" />
 
             <div class="content">
-              A multilingual, responsive, secure, and reliable online healthcare
-              platform
+              UCLA博士，国际顶级期刊发表论文15篇，和博土生导师合作成立公司并成功融资2000万美金。博士期间发表五篇顶尖期刊论文，是三家期刊的资深审稿人，斩获两项国际大奖，并拥有—项美国专利正在商业化中。
+              致力千助力国际留学生取得绿卡，能够自由实现美国梦。
             </div>
           </div>
           <div class="summary-content">
-            <img src="../assets/images/2a@1x.png" alt="" class="icon" />
+            <img src="../assets/images/founder2.png" alt="" class="icon" />
 
             <div class="content">
-              Proprietary large-scale medical models tailored for the healthcare
-              industry
+              本科毕业于华北电力大学，校级优秀毕业生，后获全额奖学金直博
+              UCLA,攻读环境工程PhD，期间多次评选美国奖学金。博士期间致力于环境领域研究，致力于解决全球碳中和问题，项目获得了—项美国专利和百万美元投资人资助。踉合伙人创立两家公司，深知留学移民不易，将知学团队宝贵留学移民经验商业化，立志服务后来人少走前人弯路，以最高效专业的方式获得绿卡。
             </div>
           </div>
           <div class="summary-content">
-            <img src="../assets/images/3a@1x.png" alt="" class="icon" />
+            <img src="../assets/images/founder3.png" alt="" class="icon" />
 
             <div class="content">
-              Strong large language models and a talent pool with
-              interdisciplinary expertise in medicine
+              UCLA全奖博士，在国际顶尖期刊发表10＋篇论文，博士期间多次获评奖学金。同时是—位连续创业者，成功创立估值千万美金科技公司，融得百万美元投资。在美生活近10年，深知留学移民Fl,
+              HlB,
+              PERM、140、485等—路打怪升级的不容易，立志做—家市场上最专业最高效的留学机构，帮助同胞们最低成本最高效率最高专业度，斩获绿卡，实现美国梦！
             </div>
           </div>
         </div>
@@ -97,62 +83,39 @@
     <div class="solution">
       <div class="container">
         <div class="solution-title-content">
-          <div class="title">Our Solution</div>
-
-          <div class="title-context">
-            miti.health is an online comprehensive platform utilizing the latest
-            AI technology to support medical diagnosis,
+          <div class="title">知学创始故事</div>
+          <div class="subtitle">
+            知学移民(Green Lab) 专注于提供高端人才美国绿卡移民咨询服务
           </div>
           <div class="title-context">
-            treatment recommendations and patient management.
+            GreenLab学术专家文书团队汇集全球top30名校博士10+，手握多个绿卡申请成功案例；坐拥经验老道、专业审慎的律师，将客户需求摆在第一位提供高质量定制服务。Greenlab客群专一，集中火力只专注服务美国高端人才移民，积累USCIS审理趋势深度洞察，在以下类别斩获大满贯：EB2-NIW、EBl-A、和0-1。
+          </div>
+          <div class="title-context">
+            公司创始人是分别来自环境工程和生物医学专业的3位美国顶尖院校毕业的全奖博土，愿意与您分享真实的美国工作生活经历和绿卡申请经验。
+            Greenlab劣势就是合伙人是科学家对商业化没经验，24年春天才在客户建议
+            下成立公司，酒香也怕巷子深。
+          </div>
+          <div class="title-context">
+            自公司成立，新客户大多来自老客户口口相传内推转介，现已为多名高校博土／博土后，科技大厂员工成功递交绿卡申请。美国梦，路漫漫，作为美国留学工
+            作生活的亲历者，我们深知身份这一卡脖子问题的痛点。选择我们，助您最短
+            时间锁定PD，为您和家人的美国生活挪去身份之忧。
           </div>
         </div>
         <div class="solution-content-box">
           <div class="solution-content solution-content-1">
-            <div class="content">Clinical Diagnosis and Treatment</div>
-            <div class="solution-content-hover">
-              <div class="title">Clinical Diagnosis and Treatment</div>
-              <div class="context">
-                <p>
-                  Supporting automatic medical record generation, medical record
-                </p>
-                <p>
-                  quality control, and providing auxiliary diagnostic and
-                  treatment
-                </p>
-                <p>
-                  suggestions can effectively reduce the workload of clinical
-                  doctors.
-                </p>
-              </div>
+            <div class="title">其他服务的劣势</div>
+            <div class="context">
+              <p>有问题只能邮件沟通， 1-3个工作日内回复？</p>
+              <p>SoC只提供模版， 客户自己要花100＋小时？</p>
+              <p>签约到递交平均耗时1年之久？</p>
             </div>
           </div>
           <div class="solution-content solution-content-2">
-            <div class="content">Patient Services</div>
-            <div class="solution-content-hover">
-              <div class="title">Patient Services</div>
-              <div class="context">
-                <p>
-                  Writing consultation conclusions based on diagnostic
-                  information
-                </p>
-                <p>
-                  such as the patient's disease characteristics, overall
-                  physical condition,
-                </p>
-                <p>
-                  and objective conditions, followed by a review by outpatient
-                  experts,
-                </p>
-                <p>
-                  supports doctors in correcting Al diagnostic results during
-                </p>
-                <p>
-                  consultations.This process provides more
-                  scientific,standardized, and
-                </p>
-                <p>high precision individualized treatment plans.</p>
-              </div>
+            <div class="title">我们的优势</div>
+            <div class="context">
+              <p>Greenlab提供24*7微信群支持，及时答疑解惑</p>
+              <p>Greenlab精挑您同方向名校学术专家根据您的背景定制化撰写</p>
+              <p>Greenlab三对一服务模式，从签约到递交2个月拿下，提前锁定PD</p>
             </div>
           </div>
         </div>
@@ -222,105 +185,75 @@
             </div>
           </div>
         </div>
+        <div class="grid-title-content">
+          <div class="title">典型成功案例</div>
+        </div>
         <div class="grid-container">
           <div class="grid-item">
-            <img
-              src="../assets/images/grid1.png"
-              alt="Automated Medication Review"
-            />
-            <p class="p1">Automated Medication Review</p>
+            <p class="p1">甘同学（现FAAG员工）</p>
             <div class="grid-item-hover">
               <div class="text">
+                <p>本科专业：环境工程（华中某211）</p>
+                <p>硕士专业：环境工程（中国某985），统计分析（南加州某名校）</p>
+                <p>论文：1篇一作，2篇非一作 引用：158</p>
+                <p>申请类型：EBlB</p>
                 <p>
-                  Based on patients' medical history, current health status, and
-                  personal habits, the AI
+                  知学服务：配合公司要求，介绍3位独立推荐人、推荐10个审
+                  稿、撰写5封推荐信
                 </p>
                 <p>
-                  large model can aid doctors in making decisions about
-                  medication and dosage
-                </p>
-                <p>
-                  optimization, improving treatment outcomes and reducing
-                  adverse effects.
+                  结果：提交到美国移民局1个
+                  月，收到receipt后，建议客户pp,然后1周后申请通过。
                 </p>
               </div>
             </div>
           </div>
 
           <div class="grid-item">
-            <img
-              src="../assets/images/grid2.png"
-              alt="Personalized Medication Recommendations"
-            />
-            <p class="p1">Personalized Medication</p>
-            <p class="p2">Recommendations</p>
+            <p class="p1">汤同学（现FAAG员工）</p>
+
             <div class="grid-item-hover">
               <div class="text">
+                <p>·本科专业：生物工程（北京某985）</p>
+                <p>硕士专业：计算机科学（南加州某名校）</p>
+                <p>论文：2篇非一作 引用：50</p>
+                <p>申请类型：NIW</p>
                 <p>
-                  The Al large model automatically checks patients' medication
-                  lists, identifying
+                  知学服务：制定申请规划，介绍2位独立推荐人、推荐1审稿、撰写推荐信，撰写petition
+                  letter
                 </p>
-                <p>
-                  potential drug interactions, dosage errors, or allergy risks,
-                  helping to prevent
-                </p>
-                <p>medication errors and enhance patient safety.</p>
+                <p>结果：5个月申请通过</p>
               </div>
             </div>
           </div>
 
           <div class="grid-item">
-            <img
-              src="../assets/images/grid3.png"
-              alt="Monitoring and Adjusting Treatment Effectiveness"
-            />
-            <p class="p1">Monitoring and Adjusting Treatment</p>
-            <p class="p2">Effectiveness</p>
+            <p class="p1">张同学（现美国某公司工程师）</p>
+
             <div class="grid-item-hover">
               <div class="text">
-                <p>
-                  The Al large model automatically checks patients' medication
-                  lists, identifying
-                </p>
-                <p>
-                  potential drug interactions, dosage errors, or allergy risks,
-                  helping to prevent
-                </p>
-                <p>medication errors and enhance patient safety.</p>
+                <p>本科专业：环境工程（西北某211）</p>
+                <p>硕士专业：环境工程（中国北方某985）</p>
+                <p>博士专业：化学与环境工程（南加州某名校）</p>
+                <p>论文：5篇一作，8篇非一作 引用：430</p>
+                <p>申请类型：NIW, EB1A</p>
+                <p>知学服务：撰写5封推荐信，撰写petition letter</p>
+                <p>结果：NIW和EB1A直接PP,一周内拿到申请通过结果通知</p>
               </div>
             </div>
           </div>
 
           <div class="grid-item">
-            <img
-              src="../assets/images/grid4.png"
-              alt="Smart Reminders and Patient Management"
-            />
-            <p class="p1">Smart Reminders and Patient</p>
-            <p class="p2">Management</p>
+            <p class="p1">胡同学（现美国某校博后）</p>
             <div class="grid-item-hover">
               <div class="text">
-                <p>
-                  The Al large model can set up reminder systems to prompt
-                  doctors to review and
-                </p>
-                <p>
-                  update prescriptions in a timely manner, This is particularly
-                  important for chronic
-                </p>
-                <p>
-                  disease patients who need regular treatment adjustments.
-                  Additionally, the Al large
-                </p>
-                <p>
-                  model can generate educational materials for
-                  patients,explaining the purpose of
-                </p>
-                <p>
-                  medications, correct usage methods, and possible side effects,
-                  thereby enhancing
-                </p>
-                <p>patients' understanding and adherence to treatment plans.</p>
+                <p>本科专业：环境工程（北京某211）</p>
+                <p>硕士专业：环境工程（北京某211）</p>
+                <p>博士专业：化学与环境工程（美国某校）</p>
+                <p>论文：8篇一作，4篇非一作 引用：330</p>
+                <p>申请类型：NIW, EBlA</p>
+                <p>知学服务撰写5封推荐信，撰写petition letter</p>
+                <p>结果：NIW和EBlA regular process, 6个月拿到通过结果通知</p>
               </div>
             </div>
           </div>
@@ -400,7 +333,7 @@ import { useRouter } from "vue-router";
   width: 100%;
   height: 960px;
   background-color: #f9f2ff;
-  background-image: url("../assets/images/banner.png");
+  // background-image: url("../assets/images/banner.png");
   background-size: cover;
   background-position: center;
 
@@ -416,13 +349,14 @@ import { useRouter } from "vue-router";
       width: 690px;
       height: 120px;
       font-family: "Montserrat";
-      font-size: 120px;
+      font-size: 80px;
       color: #1c53e8;
       line-height: 69px;
       letter-spacing: 1px;
       font-weight: 700;
       text-align: left;
     }
+
     .title-content {
       width: 660px;
       font-family: "Montserrat";
@@ -458,9 +392,18 @@ import { useRouter } from "vue-router";
 
     .title {
       font-family: "Montserrat";
-      font-weight: 700;
-      font-size: 48px;
+      font-weight: 400;
+      font-size: 28px;
       color: #000000;
+      line-height: 48px;
+      text-align: left;
+      padding-bottom: 24px;
+    }
+    .subtitle {
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 28px;
+      color: green;
       line-height: 48px;
       text-align: left;
       padding-bottom: 24px;
@@ -545,7 +488,7 @@ import { useRouter } from "vue-router";
 }
 
 .solution {
-  background-color: #d8dff0;
+  background-color: white;
   width: 100%;
   padding-bottom: 180px;
   display: flex;
@@ -565,6 +508,15 @@ import { useRouter } from "vue-router";
       color: #000000;
       line-height: 48px;
       margin-bottom: 24px;
+    }
+    .subtitle {
+      font-family: "Montserrat";
+      font-weight: 400;
+      font-size: 28px;
+      color: green;
+      line-height: 48px;
+      text-align: center;
+      padding-bottom: 24px;
     }
 
     .title-context {
@@ -589,13 +541,16 @@ import { useRouter } from "vue-router";
       position: relative;
       height: 380px;
       width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       &.solution-content-1 {
-        background-image: url("../assets/images/solution1.png");
+        // background-image: url("../assets/images/solution1.png");
         background-size: cover;
         background-position: center;
       }
       &.solution-content-2 {
-        background-image: url("../assets/images/solution2.png");
+        // background-image: url("../assets/images/solution2.png");
         background-size: cover;
         background-position: center;
       }
@@ -622,42 +577,6 @@ import { useRouter } from "vue-router";
         text-align: center;
         width: 100%;
       }
-    }
-
-    .solution-content-hover {
-      display: none;
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      background: #1c53e8;
-      border-radius: 12px;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      .title {
-        font-family: "Montserrat-medium";
-        font-weight: 500;
-        font-size: 24px;
-        color: #ffffff;
-        line-height: 24px;
-        text-align: center;
-      }
-
-      .context {
-        font-family: "Montserrat";
-        font-weight: 400;
-        font-size: 14px;
-        color: rgba(255, 255, 255, 0.6);
-        line-height: 22px;
-        text-align: center;
-        margin-top: 24px;
-      }
-    }
-
-    .solution-content:hover .solution-content-hover {
-      display: flex;
-      opacity: 1;
     }
   }
 }
@@ -832,7 +751,7 @@ import { useRouter } from "vue-router";
   .banner {
     background-size: cover;
     position: relative;
-    background-image: url("../assets/images/banner_mobile.png");
+    // background-image: url("../assets/images/banner_mobile.png");
 
     .banner-content {
       left: 48px;
@@ -1001,13 +920,13 @@ import { useRouter } from "vue-router";
         width: 100%;
 
         &.solution-content-1 {
-          background-image: url("../assets/images/solution1_mobile.png");
+          // background-image: url("../assets/images/solution1_mobile.png");
           background-size: cover;
           background-position: center;
         }
 
         &.solution-content-2 {
-          background-image: url("../assets/images/solution2_mobile.png");
+          // background-image: url("../assets/images/solution2_mobile.png");
           background-size: cover;
           background-position: center;
         }
@@ -1118,6 +1037,24 @@ import { useRouter } from "vue-router";
     .title,
     .content {
       text-align: center;
+    }
+  }
+  .grid-title-content {
+    margin-top: 120px;
+    margin-bottom: 56px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+      text-align: center;
+      font-family: "Montserrat-Bold";
+      font-weight: 700;
+      font-size: 48px;
+      color: #000000;
+      line-height: 48px;
+      margin-bottom: 24px;
     }
   }
   .grid-container {
