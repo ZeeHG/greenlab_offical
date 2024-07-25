@@ -1251,47 +1251,36 @@ import { useRouter } from "vue-router";
   .banner {
     background-size: cover;
     position: relative;
-    // background-image: url("../assets/images/banner_mobile.png");
 
     .banner-content {
-      left: 48px;
-      top: 452px;
-      width: 442px;
-      height: auto;
-      padding: 20px;
+      left: 0;
+      top: 0px;
+      width: 100%;
+      padding: 10px;
       position: absolute;
 
       .title {
-        width: 368px;
-        height: 64px;
+        width: 100%;
+        height: auto;
         font-family: "Montserrat-Bold";
-        font-size: 64px;
+        font-size: 40px;
         color: #1c53e8;
-        line-height: 69px;
+        line-height: 36px;
         letter-spacing: 1px;
-        font-weight: 700;
+        font-weight: 900;
         text-align: left;
-        margin-bottom: 31px;
+        margin-bottom: 15px;
       }
 
       .title-content {
-        width: 442px;
+        width: 100%;
         font-family: "Montserrat-Regular";
         font-size: 20px;
         color: #000000;
-        line-height: 22px;
+        line-height: 18px;
         text-align: left;
-        font-weight: 400;
+        font-weight: 700;
       }
-    }
-
-    .mouse {
-      position: absolute;
-      bottom: -50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 36px;
-      height: 36px;
     }
   }
 
@@ -1299,11 +1288,11 @@ import { useRouter } from "vue-router";
     background-color: #eaf2fc;
     width: 100%;
     position: relative;
-    height: 1700px;
+    height: auto;
 
     .summary-title-content {
-      position: absolute;
-      top: 120px;
+      position: relative;
+      top: 80px;
       width: 100%;
       text-align: center;
       margin-bottom: 20px;
@@ -1311,19 +1300,19 @@ import { useRouter } from "vue-router";
       .title {
         font-family: "Montserrat-Bold";
         font-weight: 700;
-        font-size: 48px;
+        font-size: 32px;
         color: #000000;
-        line-height: 48px;
-        padding-bottom: 24px;
+        line-height: 36px;
+        padding-bottom: 20px;
         text-align: center;
       }
 
       .title-context {
         color: rgba(21, 38, 65, 0.4);
         font-family: "Montserrat";
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 400;
-        line-height: 30px;
+        line-height: 24px;
         text-align: center;
       }
     }
@@ -1336,38 +1325,36 @@ import { useRouter } from "vue-router";
     }
 
     .summary-content-box {
-      position: absolute;
-      top: 700px;
-      left: 50%;
-      width: 654px;
-      transform: translate(-50%, 0);
+      position: relative;
+      top: 100px;
+      width: 100%;
       display: grid;
       grid-template-columns: 1fr;
       gap: 17px;
 
       .summary-content {
-        height: 278px;
+        height: auto;
         width: 100%;
         background: rgba(255, 255, 255, 0.8);
         border-radius: 25px;
-        padding: 40px 36px 40px 36px;
+        padding: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 31px;
+        gap: 20px;
 
         .icon {
-          width: 100px;
-          height: 100px;
+          width: 80px;
+          height: 80px;
         }
 
         .content {
           font-family: "Montserrat";
           font-weight: 400;
-          font-size: 24px;
+          font-size: 16px;
           color: rgba(21, 38, 65, 0.8);
-          line-height: 36px;
+          line-height: 24px;
           text-align: center;
         }
       }
@@ -1378,55 +1365,54 @@ import { useRouter } from "vue-router";
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 960px;
+    height: auto;
+    padding: 20px 0;
 
     .solution-title-content {
-      margin-top: 120px;
-      margin-bottom: 56px;
+      margin-top: 60px;
+      margin-bottom: 30px;
       text-align: center;
 
       .title {
         text-align: center;
         font-family: "Montserrat-Bold";
         font-weight: 700;
-        font-size: 48px;
+        font-size: 32px;
         color: #000000;
-        line-height: 48px;
+        line-height: 36px;
         margin-bottom: 24px;
       }
 
       .title-context {
         font-family: "Montserrat";
         font-weight: 400;
-        font-size: 20px;
+        font-size: 16px;
         color: rgba(21, 38, 65, 0.4);
-        line-height: 30px;
+        line-height: 24px;
         text-align: center;
       }
     }
 
     .solution-content-box {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
+      grid-template-columns: 1fr;
+      gap: 10px;
 
       .solution-content {
         display: flex;
         background: #d8dff0;
         border-radius: 25px;
         position: relative;
-        max-width: 318px;
-        height: 430px;
+        max-width: 100%;
+        height: auto;
         width: 100%;
 
         &.solution-content-1 {
-          // background-image: url("../assets/images/solution1_mobile.png");
           background-size: cover;
           background-position: center;
         }
 
         &.solution-content-2 {
-          // background-image: url("../assets/images/solution2_mobile.png");
           background-size: cover;
           background-position: center;
         }
@@ -1437,10 +1423,10 @@ import { useRouter } from "vue-router";
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          font-size: 24px;
+          font-size: 18px;
           font-weight: 500;
           color: #ffffff;
-          line-height: 27px;
+          line-height: 22px;
           text-align: center;
           width: 100%;
         }
