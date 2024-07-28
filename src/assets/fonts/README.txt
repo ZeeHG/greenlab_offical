@@ -12,7 +12,7 @@ This means all the styles are contained in these files:
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Montserrat:
+in those case you can use the static font files for Montserrat:
   static/Montserrat-Thin.ttf
   static/Montserrat-ExtraLight.ttf
   static/Montserrat-Light.ttf
