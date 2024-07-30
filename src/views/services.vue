@@ -18,12 +18,33 @@
       <div class="container">
         <div class="feature">
           <div class="title-container">
+            <img src="../assets/images/flag.png" alt="" class="flag" />
             <div class="title">主营业务</div>
           </div>
+          <div class="tab_list">
+            <ul class="div-tab-head">
+              <li
+                class="offer_head2"
+                :class="{ 'head-on2': currentTab === 'eb1a' }"
+                @click="showEb1a"
+              >
+                EB-1 A
+              </li>
+              <li
+                class="offer_head2"
+                :class="{ 'head-on2': currentTab === 'niw' }"
+                @click="showNiw"
+              >
+                EB-2 NIW
+              </li>
+            </ul>
+          </div>
+
           <div class="feature-content">
-            <div class="feature-desc eb1a">
-              <div class="title">EB-1 A</div>
-              <div>
+            <div class="background-image"></div>
+            <div v-if="currentTab === 'eb1a'" class="feature-desc eb1a">
+              <div class="section">
+                <div class="title">EB-1 A</div>
                 <div class="content">
                   <p>
                     EBIA （Employment-Based First Preference Immigration:
@@ -34,23 +55,26 @@
                   </p>
                 </div>
               </div>
-              <div>
-                <div class="content-title">EBlA申请人背景要求：</div>
-                <div class="content">SCI论文引用200以上</div>
-              </div>
-              <div>
-                <div class="content-title">EBlA优势：</div>
+              <div class="section">
                 <div class="content">
+                  <div class="content-title">EBlA优势：</div>
                   <p>1.不需要美国雇主支持</p>
                   <p>2.平均2~3年内拿到绿卡</p>
                   <p>3.无投资风险</p>
                   <p>4.一人拿卡，未成年子女和配偶即拿卡</p>
                 </div>
+                <div class="image">
+                  <img src="../assets/images/eb1a.png" alt="EB-1 A Advantage" />
+                </div>
+              </div>
+              <div class="section">
+                <div class="content-title">EBlA申请人背景要求：</div>
+                <div class="content">SCI论文引用200以上</div>
               </div>
             </div>
-            <div class="feature-desc niw">
-              <div class="title">EB-2 NIW</div>
-              <div>
+            <div v-if="currentTab === 'niw'" class="feature-desc niw">
+              <div class="section">
+                <div class="title">EB-2 NIW</div>
                 <div class="content">
                   <p>
                     NIW （National Interest
@@ -58,16 +82,9 @@
                   </p>
                 </div>
               </div>
-              <div>
-                <div class="content-title">NIW申请人背景要求：</div>
+              <div class="section">
                 <div class="content">
-                  有硕士以上学历＋3年工作经验，有英文论文发表最佳;
-                  或本科学历＋5年以上工作经验
-                </div>
-              </div>
-              <div>
-                <div class="content-title">NIW优势：</div>
-                <div class="content">
+                  <div class="content-title">NIW优势：</div>
                   <p>1.不需要美国雇主支持，没有移民监</p>
                   <p>2.无语言、年龄限制</p>
                   <p>3.平均五年内拿到绿卡</p>
@@ -75,40 +92,53 @@
                   <p>5.一人申请，配偶及21周岁以下子女同时获得美国永久绿卡</p>
                   <p>6.排队期间，申请人可继续从事国内工作，不必着急赴美</p>
                 </div>
+                <div class="image">
+                  <img
+                    src="../assets/images/niw.png"
+                    alt="EB-2 NIW Advantage"
+                  />
+                </div>
+              </div>
+              <div class="section">
+                <div class="content-title">NIW申请人背景要求：</div>
+                <div class="content">
+                  有硕士以上学历＋3年工作经验，有英文论文发表最佳;
+                  或本科学历＋5年以上工作经验
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="feature">
-          <div class="feature-desc">
-            <div class="title">其他增值服务</div>
-            <div class="content">
-              <p><strong class="green-text">SOC撰写</strong></p>
-              <div class="content-item">
+        <div class="feature-alt">
+          <div class="title">其他增值服务</div>
+          <div class="additional-services">
+            <div class="service-item">
+              <div class="service-title">SOC撰写</div>
+              <div class="service-content">
                 <img src="../assets/images/else1.png" class="content-img" />
-                <div>
+                <div class="text">
                   <p>1.与客户沟通SOC撰写思路</p>
                   <p>2.帮助客户总结归纳申请闪光点</p>
                   <p>3.给客户交付SOC材料助力客户绿卡申请</p>
                 </div>
               </div>
             </div>
-            <div class="content">
-              <p><strong class="green-text">Notable Citation撰写</strong></p>
-              <div class="content-item">
+            <div class="service-item">
+              <div class="service-title">Notable Citation撰写</div>
+              <div class="service-content">
                 <img src="../assets/images/else2.png" class="content-img" />
-                <div>
+                <div class="text">
                   <p>1.遍历客户的所有文章和引用</p>
                   <p>2.总结突出客户工作的重要性（是怎么被其他文献引用的）</p>
                   <p>3.一周内返工，节省客户大量时间精力</p>
                 </div>
               </div>
             </div>
-            <div class="content">
-              <p><strong class="green-text">背景提升</strong></p>
-              <div class="content-item">
+            <div class="service-item">
+              <div class="service-title">背景提升</div>
+              <div class="service-content">
                 <img src="../assets/images/else3.png" class="content-img" />
-                <div>
+                <div class="text">
                   <p>1.高质量期刊审稿邀约</p>
                   <p>2.精挑行业精英＋内推牛人作为推荐人</p>
                 </div>
@@ -122,11 +152,21 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
 import { useRouter } from "vue-router";
 
 export default defineComponent({
   setup() {
+    const currentTab = ref("eb1a");
+
+    const showEb1a = () => {
+      currentTab.value = "eb1a";
+    };
+
+    const showNiw = () => {
+      currentTab.value = "niw";
+    };
+
     const router = useRouter();
 
     const goToHomepage = () => {
@@ -150,6 +190,9 @@ export default defineComponent({
       goToServices,
       goToAdvantagesProcess,
       goTocasetudies,
+      currentTab,
+      showEb1a,
+      showNiw,
     };
   },
 });
@@ -189,6 +232,7 @@ export default defineComponent({
     }
   }
 }
+
 .feature-list {
   padding: 80px 127px;
 
@@ -213,28 +257,214 @@ export default defineComponent({
 
     .title-container {
       display: flex;
-      justify-content: center;
       align-items: center;
-      height: 150px; // 根据需要调整高度
+      justify-content: center;
+      gap: 20px;
+      height: auto;
+      margin-bottom: 24px;
+    }
+
+    .flag {
+      width: auto;
+      height: 60px;
     }
 
     .title {
       text-align: center;
       font-family: "Montserrat-Bold";
       font-weight: 700;
-      font-size: 48px;
-      color: #000000;
+      font-size: 60px;
+      color: #000;
       line-height: 48px;
-      margin-bottom: 24px;
+    }
+
+    .tab_list {
+      width: 400px;
+      height: 45px;
+      background: #fff;
+      overflow: hidden;
+      position: relative;
+      margin: 0 auto;
+      margin-bottom: 20px;
+
+      .div-tab-head {
+        width: 400px;
+        height: 45px;
+        overflow: hidden;
+        position: absolute;
+        bottom: 0px;
+        margin-bottom: 0;
+
+        li {
+          cursor: pointer;
+          width: 200px;
+          height: 45px;
+          line-height: 45px;
+          text-align: center;
+          float: left;
+          font-size: 16px;
+          color: #414398;
+          box-sizing: border-box;
+          border: 1px solid #414398;
+
+          &.head-on2 {
+            background-color: #414398;
+            color: #fff;
+          }
+        }
+      }
     }
 
     .feature-content {
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
       width: 100%;
+      background-image: url("../assets/images/servicebg.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      padding: 40px;
+
+      .section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .title {
+          font-family: "Montserrat-Bold";
+          font-weight: 700;
+          font-size: 48px;
+          color: #000000;
+          line-height: 48px;
+          text-align: left;
+          max-width: 673px;
+        }
+
+        .content {
+          font-family: "Montserrat-Regular";
+          font-weight: 400;
+          max-width: 551px;
+          font-size: 17px;
+          color: #333;
+          line-height: 24px;
+          text-align: left;
+
+          p {
+            margin-bottom: 16px;
+          }
+        }
+
+        .content-title {
+          font-family: Montserrat-Bold;
+          font-weight: 600;
+          font-size: 16px;
+          color: #000000;
+          line-height: 32px;
+          text-align: left;
+          font-style: normal;
+          text-transform: none;
+        }
+
+        .content-item {
+          display: flex;
+          align-items: flex-start;
+          gap: 20px;
+
+          .content-img {
+            width: 50px;
+            height: 50px;
+          }
+
+          div {
+            flex: 1;
+          }
+        }
+
+        .green-text {
+          color: #4caf50;
+          font-weight: bold;
+        }
+
+        .image {
+          flex: 1;
+          img {
+            width: 50%;
+            height: 50%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+        }
+
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 20px;
+
+          th,
+          td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+          }
+
+          th {
+            background-color: #28a745;
+            color: #fff;
+            font-weight: bold;
+          }
+
+          tr:nth-child(even) {
+            background-color: #f9f9f9;
+          }
+
+          tr:hover {
+            background-color: #f1f1f1;
+          }
+        }
+      }
+    }
+  }
+
+  .feature-alt {
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: white;
+
+    &:not(:last-child)::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      border-bottom: 1px dashed #ccc;
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
 
-    .feature-desc {
+    .title {
+      text-align: center;
+      font-family: "Montserrat-Bold";
+      font-weight: 700;
+      font-size: 60px;
+      color: #000;
+      line-height: 48px;
+      margin-bottom: 24px;
+    }
+
+    .feature-desc-alt {
       flex: 1 1 50%;
       padding: 63.5px 0 94px;
       display: flex;
@@ -251,16 +481,6 @@ export default defineComponent({
         text-align: left;
         font-style: normal;
         text-transform: none;
-      }
-
-      .title {
-        font-family: "Montserrat-Bold";
-        font-weight: 700;
-        font-size: 48px;
-        color: #000000;
-        line-height: 48px;
-        text-align: left;
-        max-width: 673px;
       }
 
       .content {
@@ -409,59 +629,41 @@ export default defineComponent({
       font-size: 18px;
       color: #333;
     }
-  }
 
-  .feature-img-container {
-    flex: 1 1 50%;
-    min-width: 0;
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-
-    &::after {
-      content: "";
+    // 新增部分
+    .additional-services {
+      display: flex;
+      justify-content: space-between;
       width: 100%;
-      height: 6px;
-      background-color: #fff;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
+      margin-top: 40px;
 
-    .feature-img {
-      width: 100%;
-    }
-  }
+      .service-item {
+        flex: 1;
+        padding: 20px;
+        border: 1px solid #000; // 黑色1px外框
+        margin-right: 20px;
+        &:last-child {
+          margin-right: 0;
+        }
+        .service-title {
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        .service-content {
+          display: flex;
+          align-items: flex-start;
+          gap: 20px;
 
-  .eb1a {
-    background-color: #e0f8e0;
+          .content-img {
+            width: 50px;
+            height: 50px;
+          }
 
-    .title {
-      color: #e0f8e0;
-    }
-
-    .content-title {
-      padding: 8px 16px;
-      border-radius: 8px;
-    }
-
-    .content {
-      background: #e0f8e0;
-    }
-  }
-
-  .niw {
-    .title {
-      color: #ff9800;
-    }
-
-    .content-title {
-      padding: 8px 16px;
-      border-radius: 8px;
-    }
-
-    .content {
-      background: #fdf3d2;
+          .text {
+            flex: 1;
+          }
+        }
+      }
     }
   }
 }
@@ -476,15 +678,16 @@ export default defineComponent({
       align-items: center;
       text-align: center;
       padding: 40px 0;
+
       .title-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 150px; /* 根据需要调整高度 */
+        height: 150px;
       }
     }
 
-    .feature-desc {
+    .feature-content {
       padding: 20px 0;
       text-align: center;
       padding-left: 0;
@@ -513,8 +716,8 @@ export default defineComponent({
       }
     }
 
-    .feature:nth-of-type(odd) .feature-desc,
-    .feature:nth-of-type(even) .feature-desc {
+    .feature:nth-of-type(odd) .feature-content,
+    .feature:nth-of-type(even) .feature-content {
       padding-left: 0;
       padding-right: 0;
     }
@@ -527,6 +730,36 @@ export default defineComponent({
     .title,
     .content {
       text-align: center;
+    }
+  }
+
+  .feature-alt {
+    padding: 40px 20px;
+
+    .title {
+      text-align: center;
+      font-family: "Montserrat-Bold";
+      font-weight: 700;
+      font-size: 60px;
+      color: #000;
+      line-height: 48px;
+      margin-bottom: 24px;
+    }
+
+    .feature-desc-alt {
+      padding: 20px 0;
+      text-align: center;
+      padding-left: 0;
+      padding-right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .content-title,
+      .title,
+      .content {
+        text-align: center;
+      }
     }
   }
 }
