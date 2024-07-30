@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = {
-  publicPath: '/greenlab_offical/',
+  publicPath: '/',
   outputDir: 'docs',
   assetsDir: 'static',
   configureWebpack: {
