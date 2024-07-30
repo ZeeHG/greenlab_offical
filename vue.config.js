@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
   publicPath: '/',
-  outputDir: "docs/greenlab_offical",
+  outputDir: "docs",
   assetsDir: 'static',
   configureWebpack: {
     plugins: [
