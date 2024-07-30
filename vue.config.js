@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = {
-  publicPath: '/greenlab_offical/',
-  outputDir: path.join('docs', 'greenlab_offical'),
+  publicPath: '/',
+  outputDir: "docs/greenlab_offical",
   assetsDir: 'static',
   configureWebpack: {
     plugins: [
