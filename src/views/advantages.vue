@@ -127,185 +127,92 @@
         </div>
         <div class="feature">
           <div class="title-container">
-            <div class="title">服务团队</div>
+            <div class="title">知学服务团队</div>
           </div>
-          <div class="feature-desc">
-            <div class="content-section">
-              <div
-                class="title"
-                style="
-                  background-color: #a4f1ce;
-                  color: #000;
-                  padding: 10px;
-                  border-radius: 8px;
-                  margin-right: 20px;
-                  flex: 0 0 200px;
-                "
-              >
-                移民方案专家
-              </div>
-              <div class="content">
-                <p>
-                  <span style="color: orange">精准匹配精通学术移民的专家</span>
-                  ，与客户一对一深度沟通，挖掘客户背景全貌和定义优先级最高的真需求，<span
-                    style="color: orange"
-                    >定制最适合您的移民方案：</span
-                  >
-                </p>
-                <ul>
-                  <li>行业经验5+年</li>
-                  <li>手握20+绿卡申请成功案例</li>
-                  <li>TOP30名校资深博士</li>
-                  <li>在美生活平均10+年</li>
-                  <li>先申请NIW占PD？</li>
-                  <li>申请H1B配偶拿H4和EAD？</li>
-                  <li>F1如何在美创业？</li>
-                  <li>一次服务，终身是您身边的移民百科全书！</li>
-                </ul>
-              </div>
+          <div class="feature-desc-alt">
+            <div class="img-container">
+              <img src="../assets/images/team.png" alt="Team Image" />
             </div>
-            <div class="content-section">
-              <div
-                class="title green-bg"
-                style="
-                  background-color: #a4f1ce;
-                  color: #000;
-                  padding: 10px;
-                  border-radius: 8px;
-                  margin-right: 20px;
-                  flex: 0 0 200px;
-                "
-              >
-                PL文书老师
+            <div class="text-container">
+              <div class="content-section">
+                <div class="title">移民方案专家</div>
+                <div class="content">
+                  <p>
+                    <span style="color: orange">精准匹配精通学术移民的专家</span
+                    >，与客户一对一深度沟通，挖掘客户背景全貌和定义优先级最高的真需求，
+                    <span style="color: orange">定制最适合您的移民方案：</span>
+                  </p>
+                  <ul>
+                    <li>行业经验5+年</li>
+                    <li>手握20+绿卡申请成功案例</li>
+                    <li>TOP30名校资深博士</li>
+                    <li>在美生活平均10+年</li>
+                    <li>先申请NIW占PD？</li>
+                    <li>申请H1B配偶拿H4和EAD？</li>
+                    <li>F1如何在美创业？</li>
+                    <li>一次服务，终身是您身边的移民百科全书！</li>
+                  </ul>
+                </div>
               </div>
-              <div class="content">
-                <p>
-                  精挑客户同方向业海内外top30名校博士/博士后/教授一对一服务，在绿卡申请中挖掘客户背景亮点，<span
-                    style="color: orange"
-                    >个性化定制客户文书</span
-                  >，包括：
-                </p>
-                <ul>
-                  <li>请推荐书撰写和润色</li>
-                  <li>推荐信撰写和润色</li>
-                  <li>SOC撰写和润色等</li>
-                </ul>
-                <p><span style="color: orange">更多增值服务：</span></p>
-                <ul>
-                  <li>推荐人背景提升</li>
-                  <li>背景提升方案设计包含审稿内推高性价比等</li>
-                </ul>
+              <div class="content-section">
+                <div class="title green-bg">PL文书老师</div>
+                <div class="content">
+                  <p>
+                    精挑客户同方向业海内外top30名校博士/博士后/教授一对一服务，在绿卡申请中挖掘客户背景亮点，
+                    <span style="color: orange">个性化定制客户文书</span
+                    >，包括：
+                  </p>
+                  <ul>
+                    <li>请推荐书撰写和润色</li>
+                    <li>推荐信撰写和润色</li>
+                    <li>SOC撰写和润色等</li>
+                  </ul>
+                  <p><span style="color: orange">更多增值服务：</span></p>
+                  <ul>
+                    <li>推荐人背景提升</li>
+                    <li>背景提升方案设计包含审稿内推高性价比等</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-            <div class="content-section">
-              <div
-                class="title green-bg"
-                style="
-                  background-color: #a4f1ce;
-                  color: #000;
-                  padding: 10px;
-                  border-radius: 8px;
-                  margin-right: 20px;
-                  flex: 0 0 200px;
-                "
-              >
-                班主任
-              </div>
-              <div class="content">
-                <p>
-                  特设第三方班主任，站在客户角度<span style="color: orange"
-                    >跟进项目和推动进度</span
-                  >
-                </p>
-                <ul>
-                  <li>您有任何问题，7天24小时及时回复</li>
-                  <li>您有不同意见，班主任收集反馈提供解决方案</li>
-                  <li>
-                    保障式全程陪伴申请进度，并监督各关键环节对待高质量让您的绿卡申请过程无忧无虑，安全省心
-                  </li>
-                </ul>
+              <div class="content-section">
+                <div class="title green-bg">班主任</div>
+                <div class="content">
+                  <p>
+                    特设第三方班主任，站在客户角度<span style="color: orange"
+                      >跟进项目和推动进度</span
+                    >
+                  </p>
+                  <ul>
+                    <li>您有任何问题，7天24小时及时回复</li>
+                    <li>您有不同意见，班主任收集反馈提供解决方案</li>
+                    <li>
+                      保障式全程陪伴申请进度，并监督各关键环节对待高质量让您的绿卡申请过程无忧无虑，安全省心
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
         <div class="feature">
-          <div class="title-container">
+          <!-- <div class="title-container">
             <div class="title">知学文书老师库</div>
-          </div>
+          </div> -->
           <div class="feature-desc">
-            <div class="content">
-              <table>
-                <thead>
-                  <tr>
-                    <th>姓名</th>
-                    <th>学历</th>
-                    <th>专业</th>
-                    <th>擅长领域</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>胡老师</td>
-                    <td>滨州州立大学博士</td>
-                    <td>环境生物</td>
-                    <td>NIW, EB1A, EB1B</td>
-                  </tr>
-                  <tr>
-                    <td>刘老师</td>
-                    <td>加州大学洛杉矶分校博士</td>
-                    <td>环境化学</td>
-                    <td>NIW, EB1A, O1</td>
-                  </tr>
-                  <tr>
-                    <td>马老师</td>
-                    <td>加州理工大学博士</td>
-                    <td>计算机科学</td>
-                    <td>NIW, EB1A</td>
-                  </tr>
-                  <tr>
-                    <td>齐老师</td>
-                    <td>麻省理工大学博士</td>
-                    <td>应用物理</td>
-                    <td>NIW, EB1A</td>
-                  </tr>
-                  <tr>
-                    <td>王老师</td>
-                    <td>威斯康星麦迪逊博士</td>
-                    <td>电子信息</td>
-                    <td>NIW, EB1A, O1</td>
-                  </tr>
-                  <tr>
-                    <td>撒老师</td>
-                    <td>加州大学伯克利分校博士</td>
-                    <td>数学</td>
-                    <td>NIW, EB1A</td>
-                  </tr>
-                  <tr>
-                    <td>杨老师</td>
-                    <td>南加州大学博士</td>
-                    <td>数据科学</td>
-                    <td>NIW, EB1A</td>
-                  </tr>
-                  <tr>
-                    <td>张老师</td>
-                    <td>伊利诺伊大学香槟分校博士</td>
-                    <td>化学工程</td>
-                    <td>NIW, EB1A</td>
-                  </tr>
-                  <tr>
-                    <td>王老师</td>
-                    <td>斯坦福大学</td>
-                    <td>材料科学</td>
-                    <td>NIW, EB1A</td>
-                  </tr>
-                  <tr>
-                    <td>赵老师</td>
-                    <td>普渡大学</td>
-                    <td>生物医学</td>
-                    <td>NIW, EB1A</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="teacher-cards">
+              <div
+                class="teacher-card"
+                v-for="(teacher, index) in teachers"
+                :key="index"
+              >
+                <div class="teacher-card-content">
+                  <div class="teacher-name">{{ teacher.name }}</div>
+                  <div class="teacher-degree">{{ teacher.degree }}</div>
+                  <div class="teacher-major">{{ teacher.major }}</div>
+                  <div class="teacher-expertise">{{ teacher.expertise }}</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -315,7 +222,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
 import { useRouter } from "vue-router";
 
 export default defineComponent({
@@ -338,11 +245,75 @@ export default defineComponent({
       router.push("/case");
     };
 
+    const teachers = ref([
+      {
+        name: "胡老师",
+        degree: "滨州州立大学博士",
+        major: "环境生物",
+        expertise: "NIW, EB1A, EB1B",
+      },
+      {
+        name: "刘老师",
+        degree: "加州大学洛杉矶分校博士",
+        major: "环境化学",
+        expertise: "NIW, EB1A, O1",
+      },
+      {
+        name: "马老师",
+        degree: "加州理工大学博士",
+        major: "计算机科学",
+        expertise: "NIW, EB1A",
+      },
+      {
+        name: "齐老师",
+        degree: "麻省理工大学博士",
+        major: "应用物理",
+        expertise: "NIW, EB1A",
+      },
+      {
+        name: "王老师",
+        degree: "威斯康星麦迪逊博士",
+        major: "电子信息",
+        expertise: "NIW, EB1A, O1",
+      },
+      {
+        name: "撒老师",
+        degree: "加州大学伯克利分校博士",
+        major: "数学",
+        expertise: "NIW, EB1A",
+      },
+      {
+        name: "杨老师",
+        degree: "南加州大学博士",
+        major: "数据科学",
+        expertise: "NIW, EB1A",
+      },
+      {
+        name: "张老师",
+        degree: "伊利诺伊大学香槟分校博士",
+        major: "化学工程",
+        expertise: "NIW, EB1A",
+      },
+      {
+        name: "王老师",
+        degree: "斯坦福大学",
+        major: "材料科学",
+        expertise: "NIW, EB1A",
+      },
+      {
+        name: "赵老师",
+        degree: "普渡大学",
+        major: "生物医学",
+        expertise: "NIW, EB1A",
+      },
+    ]);
+
     return {
       goToHomepage,
       goToServices,
       goToAdvantagesProcess,
       goTocasetudies,
+      teachers,
     };
   },
 });
@@ -382,8 +353,10 @@ export default defineComponent({
     }
   }
 }
+
 .feature-list {
   padding: 80px 127px;
+  background-color: white;
 
   .feature {
     padding: 80px 0;
@@ -408,7 +381,7 @@ export default defineComponent({
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 150px; // 根据需要调整高度
+      height: 150px;
     }
 
     .title {
@@ -470,51 +443,39 @@ export default defineComponent({
         }
       }
 
-      .content-item {
+      .teacher-cards {
         display: flex;
-        align-items: flex-start;
+        flex-wrap: wrap;
         gap: 20px;
-
-        .content-img {
-          width: 50px;
-          height: 50px;
-        }
-
-        div {
-          flex: 1;
-        }
       }
 
-      .green-text {
-        color: #4caf50;
+      .teacher-card {
+        flex: 0 0 calc(25% - 20px);
+        background: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+      }
+
+      .teacher-card-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .teacher-name {
         font-weight: bold;
+        font-size: 18px;
+        color: #0cb84e;
       }
 
-      table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-
-        th,
-        td {
-          border: 1px solid #ddd;
-          padding: 8px;
-          text-align: left;
-        }
-
-        th {
-          background-color: #28a745;
-          color: #fff;
-          font-weight: bold;
-        }
-
-        tr:nth-child(even) {
-          background-color: #f9f9f9;
-        }
-
-        tr:hover {
-          background-color: #f1f1f1;
-        }
+      .teacher-degree,
+      .teacher-major,
+      .teacher-expertise {
+        font-size: 16px;
+        color: #666;
       }
     }
 
@@ -669,6 +630,7 @@ export default defineComponent({
       align-items: center;
       text-align: center;
       padding: 40px 0;
+
       .title-container {
         display: flex;
         justify-content: center;
