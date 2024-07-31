@@ -235,7 +235,7 @@ export default defineComponent({
 
 .feature-list {
   padding: 80px 127px;
-
+  background-color: white;
   .feature {
     padding: 80px 0;
     display: flex;
