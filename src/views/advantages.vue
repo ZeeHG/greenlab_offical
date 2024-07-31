@@ -413,7 +413,6 @@ export default defineComponent({
         border-top: 1px solid rgba(0, 0, 0, 0.1);
         border-right: 1px solid rgba(0, 0, 0, 0.1);
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        border-left: 4px solid #ccc;
         padding: 24px;
         border-top-right-radius: 16px;
         border-bottom-right-radius: 16px;
@@ -421,6 +420,12 @@ export default defineComponent({
         .content-section {
           padding: 16px;
           font-size: 18px;
+          padding-bottom: 40px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          margin-bottom: 24px;
+          &:last-child {
+            border: 0;
+          }
         }
       }
     }
