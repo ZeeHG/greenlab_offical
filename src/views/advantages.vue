@@ -394,6 +394,37 @@ export default defineComponent({
       margin-bottom: 24px;
     }
 
+    .feature-desc-alt {
+      display: flex;
+      width: 100%;
+      .img-container {
+        overflow: hidden;
+        flex: 1;
+        img {
+          height: 100%;
+          object-fit: contain;
+          object-position: center;
+          border-top-left-radius: 16px;
+          border-bottom-left-radius: 16px;
+        }
+      }
+      .text-container {
+        flex: 1;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        border-left: 4px solid #ccc;
+        padding: 24px;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        color: #000;
+        .content-section {
+          padding: 16px;
+          font-size: 18px;
+        }
+      }
+    }
+
     .feature-content {
       display: flex;
       justify-content: space-between;
