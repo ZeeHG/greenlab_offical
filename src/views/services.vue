@@ -279,7 +279,7 @@ export default defineComponent({
     }
 
     .tab_list {
-      width: 400px;
+      width: 100%;
       height: 45px;
       background: #fff;
       overflow: hidden;
@@ -288,12 +288,14 @@ export default defineComponent({
       margin-bottom: 20px;
 
       .div-tab-head {
-        width: 400px;
+        width: 100%;
         height: 45px;
         overflow: hidden;
         position: absolute;
         bottom: 0px;
         margin-bottom: 0;
+        display: flex;
+        justify-content: center;
 
         li {
           cursor: pointer;
@@ -320,17 +322,33 @@ export default defineComponent({
       flex-direction: column;
       justify-content: space-between;
       width: 100%;
-      background-image: url("../assets/images/servicebg.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       position: relative;
       padding: 40px;
+      overflow: hidden; /* 确保伪元素不超出容器 */
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("../assets/images/servicebg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.3; /* 调整这个值以设置透明度，范围: 0 (完全透明) - 1 (完全不透明) */
+        z-index: 0; /* 确保伪元素在内容后面 */
+      }
+      .feature-desc {
+        z-index: 1;
+      }
 
       .section {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
+        padding: 20px 20px 20px 10%;
         background-color: rgba(255, 255, 255, 0.9);
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -354,7 +372,7 @@ export default defineComponent({
           font-family: "Montserrat-Regular";
           font-weight: 400;
           max-width: 551px;
-          font-size: 17px;
+          font-size: 20px;
           color: #333;
           line-height: 24px;
           text-align: left;
@@ -367,9 +385,9 @@ export default defineComponent({
         .content-title {
           font-family: Montserrat-Bold;
           font-weight: 600;
-          font-size: 16px;
+          font-size: 32px;
           color: #000000;
-          line-height: 32px;
+          line-height: 64px;
           text-align: left;
           font-style: normal;
           text-transform: none;
@@ -396,10 +414,11 @@ export default defineComponent({
         }
 
         .image {
-          flex: 1;
+          width: 30%;
+          height: auto;
           img {
-            width: 50%;
-            height: 50%;
+            width: 100%;
+            height: 100%;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
           }
@@ -697,7 +716,7 @@ export default defineComponent({
       align-items: left;
 
       .title {
-        order: 1;
+        /* order: 1; */
       }
 
       .feature-img-container {
@@ -711,7 +730,7 @@ export default defineComponent({
       .content-title,
       .content {
         font-family: "Montserrat-Regular";
-        order: 3;
+        /* order: 3; */
         color: rgba(21, 38, 65, 0.4);
       }
     }
