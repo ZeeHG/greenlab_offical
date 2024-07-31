@@ -19,7 +19,27 @@
         <div class="title-container">
           <div class="title">典型成功案例</div>
         </div>
-        <div class="grid-container">
+        <div class="case-tab">
+          <div
+            class="case-tab__item"
+            v-for="(item, index) in tabs"
+            :key="item"
+            :class="{
+              'case-tab__item--active': index === activeTab,
+            }"
+            @click="changeActiveTab(index)"
+          >
+            {{ item }}
+          </div>
+        </div>
+        <div class="case-tab-content">
+          <b
+            >{{ tabData[activeTab].name
+            }}<span>({{ tabData[activeTab].title }})</span></b
+          >
+          <div v-html="tabData[activeTab].desc"></div>
+        </div>
+        <!-- <div class="grid-container">
           <div class="grid-item">
             <p class="p1">甘同学（现FAAG员工）</p>
             <div class="grid-item-hover">
@@ -84,7 +104,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="client-feedback">
         <div class="container">
@@ -131,11 +151,64 @@
   </main>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, ref, computed } from "vue";
 import { useRouter } from "vue-router";
 
 export default defineComponent({
   setup() {
+    const tabData = [
+      {
+        name: "甘同学",
+        title: "现FAAG员工",
+        desc: `<p>本科专业：环境工程（华中某211）</p>
+                <p>硕士专业：环境工程（中国某985），统计分析（南加州某名校）</p>
+                <p>论文：1篇一作，2篇非一作 引用：158</p>
+                <p>申请类型：EBlB</p>
+                <p>
+                  知学服务：配合公司要求，介绍3位独立推荐人、推荐10个审稿、撰写5封推荐信
+                </p>
+                <p>
+                  结果：提交到美国移民局1个月，收到receipt后，建议客户pp,然后1周后申请通过。
+                </p>`,
+      },
+      {
+        name: "汤同学",
+        title: "现FAAG员工",
+        desc: `<p>本科专业：生物工程（北京某985）</p>
+                <p>硕士专业：计算机科学（南加州某名校）</p>
+                <p>论文：2篇非一作 引用：50</p>
+                <p>申请类型：NIW</p>
+                <p>
+                  知学服务：制定申请规划，介绍2位独立推荐人、推荐1审稿、撰写推荐信，撰写petition
+                  letter
+                </p>
+                <p>结果：5个月申请通过</p>`,
+      },
+      {
+        name: "张同学",
+        title: "现美国某公司工程师",
+        desc: `<p>本科专业：环境工程（西北某211）</p>
+                <p>硕士专业：环境工程（中国北方某985）</p>
+                <p>博士专业：化学与环境工程（南加州某名校）</p>
+                <p>论文：5篇一作，8篇非一作 引用：430</p>
+                <p>申请类型：NIW, EB1A</p>
+                <p>知学服务：撰写5封推荐信，撰写petition letter</p>
+                <p>结果：NIW和EB1A直接PP,一周内拿到申请通过结果通知</p>`,
+      },
+      {
+        name: "胡同学",
+        title: "现美国某校博后",
+        desc: `<p>本科专业：环境工程（北京某211）</p>
+                <p>硕士专业：环境工程（北京某211）</p>
+                <p>博士专业：化学与环境工程（美国某校）</p>
+                <p>论文：8篇一作，4篇非一作 引用：330</p>
+                <p>申请类型：NIW, EBlA</p>
+                <p>知学服务撰写5封推荐信，撰写petition letter</p>
+                <p>结果：NIW和EBlA regular process, 6个月拿到通过结果通知</p>`,
+      },
+    ];
+    const activeTab = ref(0);
+    const tabs = computed(() => tabData.map((item) => item.name));
     const router = useRouter();
 
     const goToHomepage = () => {
@@ -154,17 +227,23 @@ export default defineComponent({
       router.push("/case");
     };
 
+    const changeActiveTab = (index:number) => activeTab.value = index
+
     return {
+      tabData,
+      activeTab,
+      tabs,
       goToHomepage,
       goToServices,
       goToAdvantagesProcess,
       goTocasetudies,
+      changeActiveTab
     };
   },
 });
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 .header {
   display: flex;
   justify-content: space-between;
@@ -216,6 +295,63 @@ export default defineComponent({
     font-size: 48px;
     color: #000000;
     line-height: 48px;
+  }
+
+  .case-tab {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 127px * 2);
+    margin-left: 127px;
+    height: 60px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-image: linear-gradient(
+      25deg,
+      #2b2bc9,
+      #415ccd,
+      #4588cf,
+      #35b3d1
+    );
+    &__item {
+      width: 200px;
+      height: 100%;
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      color: rgba(255, 255, 255, 0.7);
+      border-right: #fff 1px solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        color: #fff;
+      }
+    }
+    &__item--active {
+      color: #fff;
+    }
+  }
+
+  .case-tab-content {
+    width: calc(100% - 127px * 2);
+    margin-left: 127px;
+    color: rgba(26, 26, 26);
+    padding: 20px 50px;
+    border-left: rgba(0, 0, 0, 0.2) 1px solid;
+    border-right: rgba(0, 0, 0, 0.2) 1px solid;
+    border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    b {
+      font-size: 32px;
+      font-weight: 800;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 24px;
+      line-height: 46px;
+    }
   }
 
   .grid-container {
