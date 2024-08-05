@@ -24,6 +24,7 @@
           <div class="tab_list">
             <ul class="div-tab-head">
               <li
+                style="list-style-type: none"
                 class="offer_head2"
                 :class="{ 'head-on2': currentTab === 'eb1a' }"
                 @click="showEb1a"
@@ -31,6 +32,7 @@
                 EB-1 A
               </li>
               <li
+                style="list-style-type: none"
                 class="offer_head2"
                 :class="{ 'head-on2': currentTab === 'niw' }"
                 @click="showNiw"
@@ -296,7 +298,9 @@ export default defineComponent({
         margin-bottom: 0;
         display: flex;
         justify-content: center;
-
+        ul {
+          list-style-type: none;
+        }
         li {
           cursor: pointer;
           width: 200px;
@@ -328,7 +332,7 @@ export default defineComponent({
       padding: 40px;
       overflow: hidden; /* 确保伪元素不超出容器 */
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -702,7 +706,7 @@ export default defineComponent({
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 150px;
+        height: 200px;
       }
     }
 

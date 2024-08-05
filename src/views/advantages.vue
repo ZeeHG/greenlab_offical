@@ -671,7 +671,8 @@ export default defineComponent({
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 150px; /* 根据需要调整高度 */
+        padding-top: 150px;
+        height: auto;
       }
     }
 
