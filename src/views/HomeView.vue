@@ -498,6 +498,9 @@ export default defineComponent({
 
     .summary-content-box {
       grid-template-columns: 1fr; // 单列布局
+      .summary-content {
+        max-width: 100%;
+      }
     }
   }
 }
