@@ -19,25 +19,26 @@
         <div class="title-container">
           <div class="title">典型成功案例</div>
         </div>
-        <div class="case-tab">
-          <div
-            class="case-tab__item"
-            v-for="(item, index) in tabs"
-            :key="item"
-            :class="{
-              'case-tab__item--active': index === activeTab,
-            }"
-            @click="changeActiveTab(index)"
-          >
-            {{ item }}
-          </div>
-        </div>
         <div class="case-tab-content">
-          <b
-            >{{ tabData[activeTab].name
-            }}<span>({{ tabData[activeTab].title }})</span></b
+          <Swiper
+           :modules="modules"
+            :slides-per-view="isSmallScreen ? 2: 3"
+            :space-between="isSmallScreen ? 4: 20"
+            :slides-per-group="1"
+            navigation
+            loop
+            :pagination="{ clickable: true }"
+            :autoplay="{ delay: 2000}"
+            class="cate-swiper"
           >
-          <div v-html="tabData[activeTab].desc"></div>
+            <SwiperSlide v-for="(item, index) in tabs" :key="item">
+              <div class="case-tab-content__item">
+                <b>{{ tabData[index].name }}</b>
+                <span>({{ tabData[index].title }})</span>
+                <div v-html="tabData[index].desc"></div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
         <!-- <div class="grid-container">
           <div class="grid-item">
@@ -152,10 +153,17 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, computed } from "vue";
+import { defineComponent, ref, computed, onMounted } from "vue";
 import { useRouter } from "vue-router";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import { Navigation, Pagination, Scrollbar, A11y,Autoplay
 
+} from "swiper/modules";
 export default defineComponent({
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
   setup() {
     const tabData = [
       {
@@ -211,6 +219,7 @@ export default defineComponent({
     const activeTab = ref(0);
     const tabs = computed(() => tabData.map((item) => item.name));
     const router = useRouter();
+    const isSmallScreen = ref(false);
 
     const goToHomepage = () => {
       router.push("/");
@@ -228,7 +237,23 @@ export default defineComponent({
       router.push("/case");
     };
 
-    const changeActiveTab = (index:number) => activeTab.value = index
+    onMounted(() => {
+      if (window.innerWidth > 768) {
+        isSmallScreen.value = false;
+      } else {
+        isSmallScreen.value = true;
+      }
+      // 监听屏幕是否小于768px
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+          isSmallScreen.value = false;
+        } else {
+          isSmallScreen.value = true;
+        }
+      });
+    })
+
+    const changeActiveTab = (index: number) => (activeTab.value = index);
 
     return {
       tabData,
@@ -238,7 +263,9 @@ export default defineComponent({
       goToServices,
       goToAdvantagesProcess,
       goTocasetudies,
-      changeActiveTab
+      changeActiveTab,
+      modules: [Navigation, Pagination, Scrollbar, A11y,Autoplay],
+      isSmallScreen
     };
   },
 });
@@ -298,60 +325,38 @@ export default defineComponent({
     line-height: 48px;
   }
 
-  .case-tab {
-    display: flex;
-    align-items: center;
-    width: calc(100% - 127px * 2);
-    margin-left: 127px;
-    height: 60px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    background-image: linear-gradient(
-      25deg,
-      #2b2bc9,
-      #415ccd,
-      #4588cf,
-      #35b3d1
-    );
-    &__item {
-      width: 200px;
-      height: 100%;
-      font-size: 30px;
-      font-weight: bold;
-      cursor: pointer;
-      color: rgba(255, 255, 255, 0.7);
-      border-right: #fff 1px solid;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      &:hover {
-        color: #fff;
-      }
-    }
-    &__item--active {
-      color: #fff;
-    }
-  }
-
   .case-tab-content {
-    width: calc(100% - 127px * 2);
-    margin-left: 127px;
-    color: rgba(26, 26, 26);
-    padding: 20px 50px;
-    border-left: rgba(0, 0, 0, 0.2) 1px solid;
-    border-right: rgba(0, 0, 0, 0.2) 1px solid;
-    border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
-    border-bottom-left-radius: 16px;
-    border-bottom-right-radius: 16px;
-    b {
-      font-size: 32px;
-      font-weight: 800;
-      display: inline-block;
-      margin-bottom: 8px;
+    width: calc(100% - 80px * 2);
+    margin-left: 80px;
+    color: #1a1a1a;
+    overflow: hidden;
+    .swiper {
+      width: 100%;
+      height: 100%;
     }
-    p {
-      font-size: 24px;
-      line-height: 46px;
+    &__item {
+      width: 100%;
+      padding: 20px 50px;
+      height: 100%;
+      max-height: 600px;
+      border: rgba(0, 0, 0, 0.2) 1px solid;
+      border-radius: 16px;
+      user-select: none;
+      b {
+        font-size: 32px;
+        font-weight: 800;
+        display: inline-block;
+        margin-bottom: 8px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      p {
+        font-size: 24px;
+        line-height: 46px;
+        word-wrap: break-word; /* 自动换行 */
+        word-break: break-word; /* 支持长单词换行 */
+        white-space: normal; /* 确保 p 标签内文本正常换行 */
+      }
     }
   }
 
@@ -428,7 +433,7 @@ export default defineComponent({
 
   .client-feedback {
     background-color: #ffffff;
-    padding: 80px 127px;
+    padding: 80px 80px;
 
     .title-container {
       display: flex;
@@ -493,6 +498,7 @@ export default defineComponent({
     .title-container {
       height: auto;
       margin-bottom: 24px;
+      margin-top: 100px;
     }
 
     .title {

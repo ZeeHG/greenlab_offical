@@ -388,9 +388,9 @@ export default defineComponent({
       text-align: center;
       font-family: "Montserrat-Bold";
       font-weight: 700;
-      font-size: 48px;
+      font-size: 60px;
       color: #000000;
-      line-height: 48px;
+      line-height: 60px;
       margin-bottom: 24px;
     }
 
@@ -458,9 +458,9 @@ export default defineComponent({
       .title {
         font-family: "Montserrat-Bold";
         font-weight: 700;
-        font-size: 48px;
+        font-size: 60px;
         color: #000000;
-        line-height: 48px;
+        line-height: 60px;
         text-align: left;
         max-width: 673px;
       }
@@ -658,7 +658,7 @@ export default defineComponent({
 
 @media (max-width: 768px) {
   .feature-list {
-    padding: 40px 20px;
+    padding: 40px 80px;
 
     .feature {
       background-color: #fff;
@@ -666,18 +666,25 @@ export default defineComponent({
       align-items: center;
       text-align: center;
       padding: 40px 0;
-
+      &:first-child {
+        .title-container {
+          margin-top: 100px;
+        }
+      }
+      &:nth-child(2) {
+        .title-container {
+          margin-top: 40px;
+        }
+      }
       .title-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: 150px;
         height: auto;
+        
       }
-    }
-
-    .feature-desc {
-      padding: 20px 0;
+      .feature-desc {
+      padding: 0 0 20px 0;
       text-align: center;
       padding-left: 0;
       padding-right: 0;
@@ -687,6 +694,7 @@ export default defineComponent({
 
       .title {
         order: 1;
+        margin-bottom: 0;
       }
 
       .feature-img-container {
@@ -699,11 +707,14 @@ export default defineComponent({
 
       .content-title,
       .content {
-        font-family: "Montserrat-Regular";
-        order: 3;
-        color: rgba(21, 38, 65, 0.4);
+          font-family: "Montserrat-Regular";
+          order: 3;
+          color: rgba(21, 38, 65, 0.4);
+        }
       }
     }
+
+    
 
     .feature:nth-of-type(odd) .feature-desc,
     .feature:nth-of-type(even) .feature-desc {

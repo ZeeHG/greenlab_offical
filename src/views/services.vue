@@ -277,7 +277,7 @@ export default defineComponent({
       font-weight: 700;
       font-size: 60px;
       color: #000;
-      line-height: 48px;
+      line-height: 60px;
     }
 
     .tab_list {
@@ -365,9 +365,9 @@ export default defineComponent({
         .title {
           font-family: "Montserrat-Bold";
           font-weight: 700;
-          font-size: 48px;
+          font-size: 60px;
           color: #000000;
-          line-height: 48px;
+          line-height: 60px;
           text-align: left;
           max-width: 673px;
         }
@@ -671,11 +671,13 @@ export default defineComponent({
         .service-title {
           font-weight: bold;
           margin-bottom: 10px;
+          color: #333;
         }
         .service-content {
           display: flex;
           align-items: flex-start;
           gap: 20px;
+          color: #333;
 
           .content-img {
             width: 50px;
@@ -693,7 +695,7 @@ export default defineComponent({
 
 @media (max-width: 768px) {
   .feature-list {
-    padding: 40px 20px;
+    padding: 40px 80px;
 
     .feature {
       background-color: #fff;
@@ -706,7 +708,7 @@ export default defineComponent({
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 200px;
+        margin-top: 100px;
       }
     }
 
@@ -754,19 +756,25 @@ export default defineComponent({
     .content {
       text-align: center;
     }
-  }
-
-  .feature-alt {
+    .feature-alt {
     padding: 40px 20px;
 
+    .additional-services {
+      flex-direction: column;
+      .service-item {
+        margin-right: 0;
+        margin-bottom: 60px;
+        padding: 60px;
+      }
+    }
     .title {
       text-align: center;
       font-family: "Montserrat-Bold";
       font-weight: 700;
       font-size: 60px;
       color: #000;
-      line-height: 48px;
-      margin-bottom: 24px;
+      line-height: 60px;
+      margin-bottom: 0;
     }
 
     .feature-desc-alt {
@@ -785,5 +793,8 @@ export default defineComponent({
       }
     }
   }
+  }
+
+  
 }
 </style>
