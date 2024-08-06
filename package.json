@@ -7,7 +7,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d docs"
+    "deploy": "main -d docs"
   },
   "dependencies": {
     "pinia": "^2.1.7",
