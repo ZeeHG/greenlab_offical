@@ -41,8 +41,9 @@
             知学移民(Green Lab) 专注于提供高端人才美国绿卡移民咨询服务
           </div>
           <div class="title-context">
-            GreenLab学术专家文书团队汇集全球top30名校博士100+，手握多个绿卡申请成功案例；坐拥经验老道、专业审慎的律师，将客户需求摆在第一位提供高质量定制服务。Greenlab客群专一，集中火力只专注<span
-              class="highlight"
+            Green
+            Lab学术专家文书团队汇集全球top30名校博士100+，手握多个绿卡申请成功案例；坐拥经验老道、专业审慎的律师，将客户需求摆在第一位提供高质量定制服务。Green
+            Lab客群专一，集中火力只专注<span class="highlight"
               >服务美国高端人才移民</span
             >，积累USCIS审理趋势深度洞察，在以下类别<span class="highlight"
               >斩获大满贯：EB2-NIW、EB1B、EBl-A、和O-1。</span
@@ -51,10 +52,15 @@
           <div class="title-context">
             公司创始人是分别来自环境工程和生物医学专业的<span class="highlight"
               >3位美国顶尖院校毕业的全奖博士</span
-            >，愿意与您分享真实的美国工作生活经历和绿卡申请经验。Greenlab劣势就是合伙人是科学家对商业化没经验，24年春天才在客户建议下成立公司，酒香也怕巷子深。
+            >，愿意与您分享真实的美国工作生活经历和绿卡申请经验。Greenlab劣势就是合伙人是科学家,对商业化没经验，24年春天才在客户建议下成立公司，酒香也怕巷子深。
           </div>
           <div class="title-context">
-            自公司成立，新客户大多来自老客户口口相传内推转介，现已为多名高校博士／博士后，科技大厂员工成功递交绿卡申请。美国梦，路漫漫，作为美国留学工作生活的亲历者，我们深知身份这一卡脖子问题的痛点。选择我们，助您最短时间锁定PD，为您和家人的美国生活挪去身份之忧。
+            自公司成立，新客户大多来自老客户口口相传内推转介，现已为多名
+            <span class="highlight">高校博士／博士后，科技大厂员工</span
+            >成功递交绿卡申请。美国梦，路漫漫，作为美国留学工作生活的亲历者，我们深知<span
+              class="highlight"
+              >身份这一卡脖子问题</span
+            >的痛点。选择我们，助您最短时间锁定PD，为您和家人的美国生活挪去身份之忧。
           </div>
         </div>
         <div class="solution-content-box">
@@ -314,7 +320,7 @@ export default defineComponent({
       margin-bottom: 16px;
 
       .highlight {
-        color: rgb(255, 136, 0);
+        color: rgb(255, 85, 0);
       }
     }
   }
@@ -359,7 +365,7 @@ export default defineComponent({
         }
 
         .highlight {
-          color: rgb(255, 136, 0);
+          color: rgb(255, 85, 0);
         }
       }
     }

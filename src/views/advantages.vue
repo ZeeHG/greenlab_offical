@@ -73,7 +73,7 @@
               <div class="text">
                 <h3>头脑风暴，挖掘背景闪光点</h3>
                 <p>
-                  深入挖掘客户背景，和客户讨论初步确定移民方案（知学优势：文书老师都是客户领域的资深专家，高效挖掘通俗客户材料，小群沟通，所有问题都能即时答到回复）
+                  深入挖掘客户背景，和客户讨论初步确定移民方案（知学优势：文书老师都是客户领域的资深专家，高效挖掘润色客户材料，小群沟通，所有问题都能即时答到回复）
                 </p>
               </div>
             </div>
@@ -110,7 +110,7 @@
               <div class="text">
                 <h3>客户审校</h3>
                 <p>
-                  整理申请材料包并交给客户审校（知学优势：知学承诺对客户不满意的文书材料修改至客户满意为止）
+                  整理申请材料包并交给客户审核（知学优势：知学承诺对客户不满意的文书材料修改至客户满意为止）
                 </p>
               </div>
             </div>
@@ -119,7 +119,7 @@
               <div class="text">
                 <h3>提交申请</h3>
                 <p>
-                  整理材料，并帮客户提交申请（知学优势：后续移民局各种回应由知学文书协助客户回复，确保客户成功拿到绿卡）
+                  整理材料，并帮客户提交申请（知学优势：后续移民局各种回执知学义务协助客户回复，确保客户成功拿到绿卡）
                 </p>
               </div>
             </div>
@@ -138,9 +138,12 @@
                 <div class="title">移民方案专家</div>
                 <div class="content">
                   <p>
-                    <span style="color: orange">精准匹配精通学术移民的专家</span
+                    <span style="color: rgb(255, 85, 0)"
+                      >精准匹配精通学术移民的专家</span
                     >，与客户一对一深度沟通，挖掘客户背景全貌和定义优先级最高的真需求，
-                    <span style="color: orange">定制最适合您的移民方案：</span>
+                    <span style="color: rgb(255, 85, 0)"
+                      >定制最适合您的移民方案：</span
+                    >
                   </p>
                   <ul>
                     <li>行业经验5+年</li>
@@ -150,8 +153,8 @@
                     <li>先申请NIW占PD？</li>
                     <li>申请H1B配偶拿H4和EAD？</li>
                     <li>F1如何在美创业？</li>
-                    <li>一次服务，终身是您身边的移民百科全书！</li>
                   </ul>
+                  <p>一次服务，终身是您身边的移民百科全书！</p>
                 </div>
               </div>
               <div class="content-section">
@@ -159,36 +162,44 @@
                 <div class="content">
                   <p>
                     精挑客户同方向业海内外top30名校博士/博士后/教授一对一服务，在绿卡申请中挖掘客户背景亮点，
-                    <span style="color: orange">个性化定制客户文书</span
+                    <span style="color: rgb(255, 85, 0)"
+                      >个性化定制客户文书</span
                     >，包括：
                   </p>
                   <ul>
-                    <li>请推荐书撰写和润色</li>
+                    <li>请愿书PL撰写和润色</li>
                     <li>推荐信撰写和润色</li>
                     <li>SOC撰写和润色等</li>
                   </ul>
-                  <p><span style="color: orange">更多增值服务：</span></p>
+                  <p>
+                    <span style="color: rgb(255, 85, 0)">更有增值服务：</span>
+                  </p>
                   <ul>
-                    <li>推荐人背景提升</li>
-                    <li>背景提升方案设计包含审稿内推高性价比等</li>
+                    <li>推荐人串联</li>
+                    <li>背景提升方案设计包含审稿内推等</li>
                   </ul>
+                  <p>
+                    理解并深挖客户科研成果创新点和价值点。好的文书是绿卡申请的制胜关键！
+                  </p>
                 </div>
               </div>
               <div class="content-section">
                 <div class="title green-bg">班主任</div>
                 <div class="content">
                   <p>
-                    特设第三方班主任，站在客户角度<span style="color: orange"
+                    特设第三方班主任，站在客户角度<span
+                      style="color: rgb(255, 85, 0)"
                       >跟进项目和推动进度</span
                     >
                   </p>
                   <ul>
-                    <li>您有任何问题，7天24小时及时回复</li>
-                    <li>您有不同意见，班主任收集反馈提供解决方案</li>
+                    <li>您有疑问，7天24小时及时回复</li>
+                    <li>您有不满，班主任收集反馈提供解决方案</li>
                     <li>
-                      保障式全程陪伴申请进度，并监督各关键环节对待高质量让您的绿卡申请过程无忧无虑，安全省心
+                      保姆式全程跟踪绿卡申请进度，并监督关键交付物完成品质
                     </li>
                   </ul>
+                  <p>让您的绿卡申请过程无忧无惧，安全省心。</p>
                 </div>
               </div>
             </div>
@@ -681,40 +692,37 @@ export default defineComponent({
         justify-content: center;
         align-items: center;
         height: auto;
-        
       }
       .feature-desc {
-      padding: 0 0 20px 0;
-      text-align: center;
-      padding-left: 0;
-      padding-right: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: left;
+        padding: 0 0 20px 0;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
 
-      .title {
-        order: 1;
-        margin-bottom: 0;
-      }
+        .title {
+          order: 1;
+          margin-bottom: 0;
+        }
 
-      .feature-img-container {
-        order: 2;
-        width: 100%;
-        margin: 20px 0;
-        max-width: 652px;
-        max-height: 560px;
-      }
+        .feature-img-container {
+          order: 2;
+          width: 100%;
+          margin: 20px 0;
+          max-width: 652px;
+          max-height: 560px;
+        }
 
-      .content-title,
-      .content {
+        .content-title,
+        .content {
           font-family: "Montserrat-Regular";
           order: 3;
           color: rgba(21, 38, 65, 0.4);
         }
       }
     }
-
-    
 
     .feature:nth-of-type(odd) .feature-desc,
     .feature:nth-of-type(even) .feature-desc {

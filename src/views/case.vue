@@ -53,9 +53,9 @@
               <div class="text">
                 <h3>高效服务，省时省力</h3>
                 <p>
-                  “我很幸运我选择了知学。因为我身边很多同学选择了某主流所。但他们花了一年才file
-                  NIW因为其他们要花大量时间去挖掘自己的notable
-                  citation和整理自己的学术贡献。而知学有高效率的团队帮我做了这两件事。感谢知学团队！”
+                  “选择知学我感觉很幸运。因为我身边很多同学选择了某主流律所后花了一年才file
+                  NIW。因为他们要花大量时间去挖掘自己的notable
+                  citation和整理自己的学术贡献。而知学有高效率的团队帮我做了这两件事。感谢知学团队！
                 </p>
               </div>
             </div>
@@ -64,7 +64,7 @@
               <div class="text">
                 <h3>解决裁员焦虑，成功申请NIW</h3>
                 <p>
-                  ”由于公司裁员，导致perm停办。我有了很大的身份焦虑。感谢知学帮我申请NIW,锁定PD,这对我来说非常重要，也很大程度上缓解了我对裁员和身份的焦虑。因为我是转码的人，我非常不确定自己是否能够用我在生物工程学习期间发表的文章办理NIW。因为有知学专业的顾问和PL老师，我逐渐克服了这些担忧，并相信有很大概率可以成功。而且知学还为了联系了几个独立推荐人。再次感谢知学。”
+                  ”由于公司裁员，导致perm停办。我有了很大的身份焦虑。感谢知学帮我申请NIW,锁定PD,这对我来说非常重要，也很大程度上缓解了我对裁员和身份的焦虑。因为我是转码的人，我非常不确定自己是否能够用我在生物工程学习期间发表的文章办理NIW。因为有知学专业的顾问和PL老师，我逐渐克服了这些担忧，并相信有很大概率可以成功。而且知学还为我联系了几个独立推荐人。再次感谢知学。”
                 </p>
               </div>
             </div>
@@ -75,8 +75,8 @@
                 <p>
                   “虽然我已经有了公司给办理的EB2的PD。但EB2实在排期太长，而且现在大厂裁员，导致我对自己的身份产生忧虑。我本打算找知学办理NIW作为保底的选择，但知学评估我的case之后推荐我向公司申请EBlB。获取公司批准后，公司让我自己准备推荐信、寻找推荐人，和增强自己的审稿记录。比较内向的我已经离开学术很久，实在不知道如何去寻找独立推荐
                   人。这个时候，知学帮我联系了期刊编辑，使我获得审稿机会，更重要的是，知学帮我梳理了我的研究经历，并把研究经历和我目前从事的工作联系起来，从而构建出来了一个具有说服力的故事。最重要的是，知学帮我挖掘了notable
-                  citation。虽然我最终的petition letter是公司律师起草
-                  的，但其实律师的PL很多句子都是从知学帮我写的推荐信里直接套用。再次感谢知学。”
+                  citation。虽然我最终的petition
+                  letter是公司律师起草的，但其实律师的PL很多句子都是从知学帮我写的推荐信里直接套用。再次感谢知学。”
                 </p>
               </div>
             </div>
@@ -411,6 +411,7 @@ export default defineComponent({
       modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay],
       isSmallScreen,
       transformHtml,
+      getTypeHtml,
     };
   },
 });
@@ -487,19 +488,19 @@ export default defineComponent({
     }
 
     .type-niw {
-      background-color: #4caf50; /* 绿色 */
+      background-color: #ca8f84;
     }
 
     .type-eb1b {
-      background-color: #ff9800; /* 橙色 */
+      background-color: #3b7ac8;
     }
 
     .type-eb1a {
-      background-color: #f44336; /* 红色 */
+      background-color: #f8b878;
     }
 
     .type-default {
-      background-color: #2196f3; /* 蓝色 */
+      background-color: #2196f3;
     }
     .swiper {
       width: 100%;
