@@ -411,8 +411,11 @@ export default defineComponent({
       .img-container {
         overflow: hidden;
         flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         img {
-          height: 100%;
+          height: 60%;
           object-fit: contain;
           object-position: center;
           border-top-left-radius: 16px;
