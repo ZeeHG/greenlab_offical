@@ -35,7 +35,7 @@
               <div class="case-tab-content__item">
                 <b>{{ tabData[index].name }}</b>
                 <!-- <span>({{ tabData[index].title }})</span> -->
-                <p class="type">{{ tabData[index].type }}</p>
+                <p v-html="getTypeHtml(tabData[index].type)" class="type"></p>
                 <div v-html="transformHtml(tabData[index].desc)"></div>
               </div>
             </SwiperSlide>
@@ -340,6 +340,26 @@ export default defineComponent({
         })
         .join("");
     };
+    const getTypeHtml = (type: any) => {
+      const parts = type.split("：");
+      const types = parts[1].split(", ");
+      return `申请类型：${types
+        .map(
+          (t: any) => `<span class="type-label ${getTypeClass(t)}">${t}</span>`
+        )
+        .join(", ")}`;
+    };
+    const getTypeClass = (type: string) => {
+      if (type.includes("NIW")) {
+        return "type-niw";
+      } else if (type.includes("EB1B")) {
+        return "type-eb1b";
+      } else if (type.includes("EB1A")) {
+        return "type-eb1a";
+      } else {
+        return "type-default";
+      }
+    };
     const activeTab = ref(0);
     const tabs = computed(() => tabData.map((item) => item.name));
     const router = useRouter();
@@ -455,6 +475,32 @@ export default defineComponent({
     margin-left: 80px;
     color: #1a1a1a;
     overflow: hidden;
+    .type {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .type-label {
+      color: white;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+
+    .type-niw {
+      background-color: #4caf50; /* 绿色 */
+    }
+
+    .type-eb1b {
+      background-color: #ff9800; /* 橙色 */
+    }
+
+    .type-eb1a {
+      background-color: #f44336; /* 红色 */
+    }
+
+    .type-default {
+      background-color: #2196f3; /* 蓝色 */
+    }
     .swiper {
       width: 100%;
       height: 100%;
