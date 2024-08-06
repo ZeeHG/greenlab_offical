@@ -34,7 +34,8 @@
             <SwiperSlide v-for="(item, index) in tabs" :key="item">
               <div class="case-tab-content__item">
                 <b>{{ tabData[index].name }}</b>
-                <span>({{ tabData[index].title }})</span>
+                <!-- <span>({{ tabData[index].title }})</span> -->
+                <p class="type">{{ tabData[index].type }}</p>
                 <div v-html="transformHtml(tabData[index].desc)"></div>
               </div>
             </SwiperSlide>
@@ -106,68 +107,239 @@ export default defineComponent({
     const tabData = [
       {
         name: "甘同学",
-        title: "现FAAG员工",
+        type: "申请类型：NIW, EB1B",
         desc: [
-                  '本科专业：环境工程（华中某211）',
-                  '硕士专业：环境工程（中国某985），统计分析（南加州某名校）',
-                  '论文：1篇一作，2篇非一作 引用：158',
-                  '申请类型：EBlB',
-                  '知学服务：配合公司要求，介绍3位独立推荐人、推荐10个审稿、撰写5封推荐信',
-                  '结果：提交到美国移民局1个月，收到receipt后，建议客户pp,然后1周后申请通过。'
-                ]
-      },
-      {
-        name: "汤同学",
-        title: "现FAAG员工",
-        desc: [
-                  '本科专业：生物工程（北京某985）',
-                  '硕士专业：计算机科学（南加州某名校）',
-                  '论文：2篇非一作 引用：50',
-                  '申请类型：NIW',
-                  '知学服务：制定申请规划，介绍2位独立推荐人、推荐1审稿、撰写推荐信，撰写petition letter',
-                  '结果：5个月申请通过'
-                ]
-      },
-      {
-        name: "张同学",
-        title: "现美国某公司工程师",
-        desc: [
-                  '本科专业：环境工程（西北某211）',
-                  '硕士专业：环境工程（中国北方某985）',
-                  '博士专业：化学与环境工程（南加州某名校）',
-                  '论文：5篇一作，8篇非一作 引用：430',
-                  '申请类型：NIW, EB1A',
-                  '知学服务：撰写5封推荐信，撰写petition letter',
-                  '结果：NIW和EB1A直接PP,一周内拿到申请通过结果通知'
-                ]
+          "客户类型：码农",
+          "有无背景提升：YES",
+          "本硕博专业以及职业：",
+          "  本科：环境工程（华中某211）",
+          "  硕士1：环境工程（中国某985）",
+          "  硕士2：统计（南加州某名校）",
+          "  现在工作：北美大厂 码农",
+          "申请时三维：",
+          "  论文：1篇一作，2篇非一作",
+          "  引用：158",
+          "  审稿：10",
+          "签约时三维：",
+          "  论文：1篇一作，2篇非一作",
+          "  引用：62",
+          "  审稿：0",
+        ],
       },
       {
         name: "胡同学",
-        title: "现美国某校博后",
+        type: "申请类型：NIW",
+        backgroundUpgrade: "YES",
         desc: [
-                  '%title:本科专业：环境工程（北京某211）',
-                  '硕士专业：环境工程（北京某211）',
-                  '博士专业：化学与环境工程（美国某校）',
-                  '论文：8篇一作，4篇非一作 引用：330',
-                  '申请类型：NIW, EBlA',
-                  '知学服务撰写5封推荐信，撰写petition letter',
-                  '结果：NIW和EBlA regular process, 6个月拿到通过结果通知'
-                ]
+          "客户类型：码农",
+          "本硕博专业及职业：",
+          "  本科：化学工程（国内某211）",
+          "  硕士1：CS（北美某校）",
+          "申请时三维：",
+          "  论文：2篇非一作",
+          "  引用：35",
+          "  审稿：2",
+          "签约时三维：",
+          "  论文：0",
+          "  引用：0",
+          "  审稿：0",
+        ],
+      },
+      {
+        name: "张同学",
+        type: "申请类型：NIW, EB1A",
+        backgroundUpgrade: "No",
+        desc: [
+          "客户类型：科研型",
+          "本硕博专业及职业：",
+          "  本科：环境工程（北京某211）",
+          "  硕士：环境工程（北京某211）",
+          "  博士：化学与环境工程（北美）",
+          "  现在工作：某科研机构",
+          "申请时三维：同签约时",
+          "签约时三维：",
+          "  论文：8篇一作，4篇非一作",
+          "  引用：330",
+          "  审稿：24",
+        ],
+      },
+      {
+        name: "XX同学",
+        type: "申请类型：NIW",
+        backgroundUpgrade: "Empty",
+        desc: [
+          "客户类型：科研型",
+          "本硕博专业及职业：",
+          "  本科：环境工程（国内某本科）",
+          "  硕士：环境工程（国内某本科）",
+          "  博士：环境工程（北美）",
+          "申请时三维：",
+          "  论文：3篇一作，6篇非一作",
+          "  引用：340",
+          "  审稿：18",
+          "签约时三维：",
+          "  Empty",
+        ],
+      },
+      {
+        name: "XX同学",
+        type: "申请类型：NIW",
+        backgroundUpgrade: "Empty",
+        desc: [
+          "本硕博专业及职业：",
+          "  本科：环境工程（国内某211）",
+          "  硕士：环境工程（国内某211）",
+          "  博士：environmental engineer（北美）",
+          "申请时三维：",
+          "  论文：4篇一作，8篇非一作",
+          "  引用：234",
+          "  审稿：36",
+          "签约时三维：",
+          "  Empty",
+        ],
+      },
+      {
+        name: "XX同学",
+        type: "申请类型：NIW",
+        backgroundUpgrade: "Empty",
+        desc: [
+          "客户类型：科研型",
+          "本硕博专业及职业：",
+          "  本科：环境工程（国内某211）",
+          "  硕士：环境工程（国内某211）",
+          "  博士：environmental engineer（北美）",
+          "申请时三维：",
+          "  论文：4篇一作，8篇非一作",
+          "  引用：234",
+          "  审稿：36",
+          "签约时三维：",
+          "  Empty",
+        ],
+      },
+      {
+        name: "XX同学",
+        type: "申请类型：NIW",
+        backgroundUpgrade: "Empty",
+        desc: [
+          "客户类型：科研型",
+          "本硕博专业及职业：",
+          "  本科：环境工程（国内某211）",
+          "  硕士：环境工程（国内某211）",
+          "  博士：environmental engineer（北美）",
+          "申请时三维：",
+          "  论文：4篇一作，8篇非一作",
+          "  引用：234",
+          "  审稿：36",
+          "签约时三维：",
+          "  Empty",
+        ],
+      },
+      {
+        name: "顾同学",
+        type: "申请类型：EB1A",
+        backgroundUpgrade: "Empty",
+        desc: [
+          "客户类型：科研型",
+          "本硕博专业及职业：",
+          "  本科：应用化学专业（国内某985）",
+          "  硕士：有机化学专业（国内某985）",
+          "  博士：有机化学专业（国内某985）",
+          "  现在工作：北美大学 faculty",
+          "申请时三维：",
+          "  论文：5篇一作，23篇非一作",
+          "  引用：890",
+          "  审稿：39（期刊审稿30，会议信邀审稿9）",
+          "签约时三维：",
+          "  Empty",
+        ],
+      },
+      {
+        name: "XX同学",
+        type: "申请类型：EB1A",
+        backgroundUpgrade: "Empty",
+        desc: [
+          "客户类型：码农",
+          "本硕博专业及职业：",
+          "  本科：计算机专业（国内某本）",
+          "  博士：计算机科学专业（北美大学）",
+          "申请时三维：",
+          "  论文：5篇一作，2篇非一作",
+          "  引用：110",
+          "  审稿：30",
+          "签约时三维：",
+          "  论文：3篇一作，2篇非一作",
+          "  引用：30",
+          "  审稿：10",
+        ],
+      },
+      {
+        name: "XX同学",
+        type: "申请类型：NIW",
+        backgroundUpgrade: "Empty",
+        desc: [
+          "客户类型：科研型",
+          "本硕博专业及职业：",
+          "  本科：计算机专业（国内某本）",
+          "  博士：计算机科学专业（北美大学）",
+          "申请时三维：",
+          "  论文：5篇一作，2篇非一作",
+          "  引用：50",
+          "  审稿：5",
+          "签约时三维：",
+          "  Empty",
+        ],
+      },
+      {
+        name: "陈同学",
+        type: "申请类型：EB1A",
+        backgroundUpgrade: "Empty",
+        desc: [
+          "客户类型：科研型",
+          "本硕博专业及职业：",
+          "  博士：新加坡南洋理工大学",
+          "  专业：化学与生物医学工程",
+          "申请时三维：",
+          "  论文：3篇一作，2篇非一作",
+          "  引用：1900+",
+          "  审稿：15",
+          "  今年1月提交申请时直接PP，大约5个工作日approve。",
+          "签约时三维：",
+          "  Empty",
+        ],
+      },
+      {
+        name: "吴同学",
+        type: "申请类型：NIW, EB1A",
+        backgroundUpgrade: "Empty",
+        desc: [
+          "客户类型：科研型",
+          "本硕博专业及职业：",
+          "  本科：环境工程",
+          "  博士：美国院校环境毒理",
+          "申请时三维：",
+          "  论文：3篇一作，6篇非一作",
+          "  引用：154",
+          "  审稿：64",
+          "  提交NIW申请，提交时非PP，6个月拿到approval。",
+          "签约时三维：",
+          "  Empty",
+        ],
       },
     ];
 
     const transformHtml = (textArr: string[]) => {
-     
-      return textArr.map((text) => {
-        // 匹配是否存在 %***: 的字符串 并将***作为class
-        const reg = /%(.+?):/g;
-        const match = reg.exec(text);
-        if (match) {
-          return `<p class="${match[1]}">${text.replace(match[0], "")}</p>`;
-        }
-        return `<p>${text}</p>`})
-      .join("");
-    }
+      return textArr
+        .map((text) => {
+          // 匹配是否存在 %***: 的字符串 并将***作为class
+          const reg = /%(.+?):/g;
+          const match = reg.exec(text);
+          if (match) {
+            return `<p class="${match[1]}">${text.replace(match[0], "")}</p>`;
+          }
+          return `<p>${text}</p>`;
+        })
+        .join("");
+    };
     const activeTab = ref(0);
     const tabs = computed(() => tabData.map((item) => item.name));
     const router = useRouter();
@@ -218,7 +390,7 @@ export default defineComponent({
       changeActiveTab,
       modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay],
       isSmallScreen,
-      transformHtml
+      transformHtml,
     };
   },
 });
@@ -306,13 +478,13 @@ export default defineComponent({
       user-select: none;
       overflow: hidden;
       b {
-        font-size: 32px;
+        font-size: 24px;
         font-weight: 800;
         overflow: hidden;
         text-overflow: ellipsis;
       }
       p {
-        font-size: 24px;
+        font-size: 18px;
         word-wrap: break-word; /* 自动换行 */
         word-break: break-word; /* 支持长单词换行 */
         white-space: normal; /* 确保 p 标签内文本正常换行 */
