@@ -127,7 +127,7 @@
             <img src="../assets/images/founder3.png" alt="" class="icon" />
             <div class="text-content">
               <div class="subtitle">Dr. Zhang</div>
-              <div class="title-context">Co-Founder & CTO</div>
+              <div class="title-context">Co-Founder & CSO</div>
               <div class="content">
                 UCLA全奖博士，在国际顶尖期刊发表10＋篇论文，博士期间多次获评奖学金。同时是—位连续创业者，成功创立估值千万美金科技公司，融得百万美元投资。在美生活近10年，深知留学移民Fl,
                 HlB,
