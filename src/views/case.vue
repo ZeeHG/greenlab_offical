@@ -35,77 +35,11 @@
               <div class="case-tab-content__item">
                 <b>{{ tabData[index].name }}</b>
                 <span>({{ tabData[index].title }})</span>
-                <div v-html="tabData[index].desc"></div>
+                <div v-html="transformHtml(tabData[index].desc)"></div>
               </div>
             </SwiperSlide>
           </Swiper>
         </div>
-        <!-- <div class="grid-container">
-          <div class="grid-item">
-            <p class="p1">甘同学（现FAAG员工）</p>
-            <div class="grid-item-hover">
-              <div class="text">
-                <p>本科专业：环境工程（华中某211）</p>
-                <p>硕士专业：环境工程（中国某985），统计分析（南加州某名校）</p>
-                <p>论文：1篇一作，2篇非一作 引用：158</p>
-                <p>申请类型：EBlB</p>
-                <p>
-                  知学服务：配合公司要求，介绍3位独立推荐人、推荐10个审稿、撰写5封推荐信
-                </p>
-                <p>
-                  结果：提交到美国移民局1个月，收到receipt后，建议客户pp,然后1周后申请通过。
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="grid-item">
-            <p class="p1">汤同学（现FAAG员工）</p>
-            <div class="grid-item-hover">
-              <div class="text">
-                <p>本科专业：生物工程（北京某985）</p>
-                <p>硕士专业：计算机科学（南加州某名校）</p>
-                <p>论文：2篇非一作 引用：50</p>
-                <p>申请类型：NIW</p>
-                <p>
-                  知学服务：制定申请规划，介绍2位独立推荐人、推荐1审稿、撰写推荐信，撰写petition
-                  letter
-                </p>
-                <p>结果：5个月申请通过</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="grid-item">
-            <p class="p1">张同学（现美国某公司工程师）</p>
-            <div class="grid-item-hover">
-              <div class="text">
-                <p>本科专业：环境工程（西北某211）</p>
-                <p>硕士专业：环境工程（中国北方某985）</p>
-                <p>博士专业：化学与环境工程（南加州某名校）</p>
-                <p>论文：5篇一作，8篇非一作 引用：430</p>
-                <p>申请类型：NIW, EB1A</p>
-                <p>知学服务：撰写5封推荐信，撰写petition letter</p>
-                <p>结果：NIW和EB1A直接PP,一周内拿到申请通过结果通知</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="grid-item">
-            <p class="p1">胡同学（现美国某校博后）</p>
-            <div class="grid-item-hover">
-              <div class="text">
-                <p>本科专业：环境工程（北京某211）</p>
-                <p>硕士专业：环境工程（北京某211）</p>
-                <p>博士专业：化学与环境工程（美国某校）</p>
-                <p>论文：8篇一作，4篇非一作 引用：330</p>
-                <p>申请类型：NIW, EBlA</p>
-                <p>知学服务撰写5封推荐信，撰写petition letter</p>
-                <p>结果：NIW和EBlA regular process, 6个月拿到通过结果通知</p>
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
       <div class="client-feedback">
         <div class="container">
@@ -173,53 +107,67 @@ export default defineComponent({
       {
         name: "甘同学",
         title: "现FAAG员工",
-        desc: `<p>本科专业：环境工程（华中某211）</p>
-                <p>硕士专业：环境工程（中国某985），统计分析（南加州某名校）</p>
-                <p>论文：1篇一作，2篇非一作 引用：158</p>
-                <p>申请类型：EBlB</p>
-                <p>
-                  知学服务：配合公司要求，介绍3位独立推荐人、推荐10个审稿、撰写5封推荐信
-                </p>
-                <p>
-                  结果：提交到美国移民局1个月，收到receipt后，建议客户pp,然后1周后申请通过。
-                </p>`,
+        desc: [
+                  '本科专业：环境工程（华中某211）',
+                  '硕士专业：环境工程（中国某985），统计分析（南加州某名校）',
+                  '论文：1篇一作，2篇非一作 引用：158',
+                  '申请类型：EBlB',
+                  '知学服务：配合公司要求，介绍3位独立推荐人、推荐10个审稿、撰写5封推荐信',
+                  '结果：提交到美国移民局1个月，收到receipt后，建议客户pp,然后1周后申请通过。'
+                ]
       },
       {
         name: "汤同学",
         title: "现FAAG员工",
-        desc: `<p>本科专业：生物工程（北京某985）</p>
-                <p>硕士专业：计算机科学（南加州某名校）</p>
-                <p>论文：2篇非一作 引用：50</p>
-                <p>申请类型：NIW</p>
-                <p>
-                  知学服务：制定申请规划，介绍2位独立推荐人、推荐1审稿、撰写推荐信，撰写petition
-                  letter
-                </p>
-                <p>结果：5个月申请通过</p>`,
+        desc: [
+                  '本科专业：生物工程（北京某985）',
+                  '硕士专业：计算机科学（南加州某名校）',
+                  '论文：2篇非一作 引用：50',
+                  '申请类型：NIW',
+                  '知学服务：制定申请规划，介绍2位独立推荐人、推荐1审稿、撰写推荐信，撰写petition letter',
+                  '结果：5个月申请通过'
+                ]
       },
       {
         name: "张同学",
         title: "现美国某公司工程师",
-        desc: `<p>本科专业：环境工程（西北某211）</p>
-                <p>硕士专业：环境工程（中国北方某985）</p>
-                <p>博士专业：化学与环境工程（南加州某名校）</p>
-                <p>论文：5篇一作，8篇非一作 引用：430</p>
-                <p>申请类型：NIW, EB1A</p>
-                <p>知学服务：撰写5封推荐信，撰写petition letter</p>
-                <p>结果：NIW和EB1A直接PP,一周内拿到申请通过结果通知</p>`,
+        desc: [
+                  '本科专业：环境工程（西北某211）',
+                  '硕士专业：环境工程（中国北方某985）',
+                  '博士专业：化学与环境工程（南加州某名校）',
+                  '论文：5篇一作，8篇非一作 引用：430',
+                  '申请类型：NIW, EB1A',
+                  '知学服务：撰写5封推荐信，撰写petition letter',
+                  '结果：NIW和EB1A直接PP,一周内拿到申请通过结果通知'
+                ]
       },
       {
         name: "胡同学",
         title: "现美国某校博后",
-        desc: `<p>本科专业：环境工程（北京某211）</p>
-                <p>硕士专业：环境工程（北京某211）</p>
-                <p>博士专业：化学与环境工程（美国某校）</p>
-                <p>论文：8篇一作，4篇非一作 引用：330</p>
-                <p>申请类型：NIW, EBlA</p>
-                <p>知学服务撰写5封推荐信，撰写petition letter</p>
-                <p>结果：NIW和EBlA regular process, 6个月拿到通过结果通知</p>`,
+        desc: [
+                  '%title:本科专业：环境工程（北京某211）',
+                  '硕士专业：环境工程（北京某211）',
+                  '博士专业：化学与环境工程（美国某校）',
+                  '论文：8篇一作，4篇非一作 引用：330',
+                  '申请类型：NIW, EBlA',
+                  '知学服务撰写5封推荐信，撰写petition letter',
+                  '结果：NIW和EBlA regular process, 6个月拿到通过结果通知'
+                ]
       },
     ];
+
+    const transformHtml = (textArr: string[]) => {
+     
+      return textArr.map((text) => {
+        // 匹配是否存在 %***: 的字符串 并将***作为class
+        const reg = /%(.+?):/g;
+        const match = reg.exec(text);
+        if (match) {
+          return `<p class="${match[1]}">${text.replace(match[0], "")}</p>`;
+        }
+        return `<p>${text}</p>`})
+      .join("");
+    }
     const activeTab = ref(0);
     const tabs = computed(() => tabData.map((item) => item.name));
     const router = useRouter();
@@ -270,6 +218,7 @@ export default defineComponent({
       changeActiveTab,
       modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay],
       isSmallScreen,
+      transformHtml
     };
   },
 });
@@ -337,6 +286,9 @@ export default defineComponent({
     .swiper {
       width: 100%;
       height: 100%;
+      .swiper-slide {
+        height: 100%;
+      }
     }
     .swiper-pagination-bullet {
       display: none;
@@ -348,22 +300,19 @@ export default defineComponent({
     &__item {
       width: 100%;
       padding: 20px 50px;
-      height: 100%;
-      max-height: 600px;
+      height: 600px;
       border: rgba(0, 0, 0, 0.2) 1px solid;
       border-radius: 16px;
       user-select: none;
+      overflow: hidden;
       b {
         font-size: 32px;
         font-weight: 800;
-        display: inline-block;
-        margin-bottom: 8px;
         overflow: hidden;
         text-overflow: ellipsis;
       }
       p {
         font-size: 24px;
-        line-height: 46px;
         word-wrap: break-word; /* 自动换行 */
         word-break: break-word; /* 支持长单词换行 */
         white-space: normal; /* 确保 p 标签内文本正常换行 */
