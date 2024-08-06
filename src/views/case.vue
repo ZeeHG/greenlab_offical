@@ -21,14 +21,14 @@
         </div>
         <div class="case-tab-content">
           <Swiper
-           :modules="modules"
-            :slides-per-view="isSmallScreen ? 2: 3"
-            :space-between="isSmallScreen ? 4: 20"
+            :modules="modules"
+            :slides-per-view="isSmallScreen ? 2 : 3"
+            :space-between="isSmallScreen ? 4 : 20"
             :slides-per-group="1"
             navigation
             loop
             :pagination="{ clickable: true }"
-            :autoplay="{ delay: 2000}"
+            :autoplay="{ delay: 2000 }"
             class="cate-swiper"
           >
             <SwiperSlide v-for="(item, index) in tabs" :key="item">
@@ -156,8 +156,12 @@
 import { defineComponent, ref, computed, onMounted } from "vue";
 import { useRouter } from "vue-router";
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Navigation, Pagination, Scrollbar, A11y,Autoplay
-
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
 } from "swiper/modules";
 export default defineComponent({
   components: {
@@ -251,7 +255,7 @@ export default defineComponent({
           isSmallScreen.value = true;
         }
       });
-    })
+    });
 
     const changeActiveTab = (index: number) => (activeTab.value = index);
 
@@ -264,8 +268,8 @@ export default defineComponent({
       goToAdvantagesProcess,
       goTocasetudies,
       changeActiveTab,
-      modules: [Navigation, Pagination, Scrollbar, A11y,Autoplay],
-      isSmallScreen
+      modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay],
+      isSmallScreen,
     };
   },
 });
@@ -333,6 +337,13 @@ export default defineComponent({
     .swiper {
       width: 100%;
       height: 100%;
+    }
+    .swiper-pagination-bullet {
+      display: none;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: grey;
     }
     &__item {
       width: 100%;
