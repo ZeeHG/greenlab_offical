@@ -145,8 +145,8 @@ export default defineComponent({
         name: "胡同学",
         title: "现美国某校博后",
         desc: [
-                  '%b:本科专业：环境工程（北京某211）',
-                  '%small:硕士专业：环境工程（北京某211）',
+                  '%title:本科专业：环境工程（北京某211）',
+                  '硕士专业：环境工程（北京某211）',
                   '博士专业：化学与环境工程（美国某校）',
                   '论文：8篇一作，4篇非一作 引用：330',
                   '申请类型：NIW, EBlA',
@@ -157,21 +157,13 @@ export default defineComponent({
     ];
 
     const transformHtml = (textArr: string[]) => {
-      const SPAN = "%span:";
-      const B = "%b:";
-      const SMALL = "%small:";
+     
       return textArr.map((text) => {
-        // 如果%span:开头，则加粗
-        if (text.startsWith(B)) {
-          return `<b>${text.replace(B, '')}</b>`;
-        }
-        // 如果%span:开头，则加粗
-        if (text.startsWith(SPAN)) {
-          return `<span>${text.replace(SPAN, '')}</span>`;
-        }
-        // 如果%small:开头，则用小号字体
-        if (text.startsWith(SMALL)) {
-          return `<p style="font-size: 12px;">${text.replace(SMALL, '')}</p>`;
+        // 匹配是否存在 %***: 的字符串 并将***作为class
+        const reg = /%(.+?):/g;
+        const match = reg.exec(text);
+        if (match) {
+          return `<p class="${match[1]}">${text.replace(match[0], "")}</p>`;
         }
         return `<p>${text}</p>`})
       .join("");
