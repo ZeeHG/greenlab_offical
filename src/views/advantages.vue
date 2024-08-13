@@ -145,7 +145,7 @@
                       >定制最适合您的移民方案：</span
                     >
                   </p>
-                  <ul>
+                  <ul style="padding-left: 10px; ">
                     <li>行业经验5+年</li>
                     <li>手握20+绿卡申请成功案例</li>
                     <li>TOP30名校资深博士</li>
@@ -166,7 +166,7 @@
                       >个性化定制客户文书</span
                     >，包括：
                   </p>
-                  <ul>
+                  <ul style="padding-left: 10px; ">
                     <li>请愿书PL撰写和润色</li>
                     <li>推荐信撰写和润色</li>
                     <li>SOC撰写和润色等</li>
@@ -174,7 +174,7 @@
                   <p>
                     <span style="color: rgb(255, 85, 0)">更有增值服务：</span>
                   </p>
-                  <ul>
+                  <ul style="padding-left: 10px; ">
                     <li>推荐人串联</li>
                     <li>背景提升方案设计包含审稿内推等</li>
                   </ul>
@@ -192,7 +192,7 @@
                       >跟进项目和推动进度</span
                     >
                   </p>
-                  <ul>
+                  <ul style="padding-left: 10px; ">
                     <li>您有疑问，7天24小时及时回复</li>
                     <li>您有不满，班主任收集反馈提供解决方案</li>
                     <li>

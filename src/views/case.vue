@@ -17,7 +17,7 @@
     <div class="case">
       <div class="container">
         <div class="title-container">
-          <div class="title">典型成功案例</div>
+          <div class="title" >典型成功案例</div>
         </div>
         <div class="case-tab-content">
           <Swiper
@@ -186,6 +186,7 @@ export default defineComponent({
         type: "申请类型：NIW",
         backgroundUpgrade: "Empty",
         desc: [
+         "客户类型：科研型",
           "本硕博专业及职业：",
           "  本科：环境工程（国内某211）",
           "  硕士：环境工程（国内某211）",
@@ -675,14 +676,14 @@ export default defineComponent({
     padding: 40px 20px;
 
     .title-container {
-      height: auto;
+     height: auto;
       margin-bottom: 24px;
       margin-top: 100px;
     }
 
-    .title {
-      font-size: 32px;
-    }
+    // .title {
+    //   font-size: 32px;
+    // }
 
     .grid-container {
       grid-template-columns: 1fr;
