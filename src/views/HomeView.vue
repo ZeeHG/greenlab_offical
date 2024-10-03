@@ -30,9 +30,29 @@
               <div class="title-content">邮箱：usgreenlab@gmail.com</div>
             </div>
           </div>
+
+          <div class="contact-container">
+            <div class="qr-code">
+              <img src="../assets/images/fee_qr.png" alt="QR Code" />
+            </div>
+
+            <div class="contact-info">
+              <div class="title-content">咨询费：</div>
+              <div class="title-content">扫二维码或点击下方链接支付</div>
+              <div class="title-content">
+                <a
+                  href="https://www.paypal.com/ncp/payment/7MWQDBMBH5BQG"
+                  target="_blank"
+                  style="color: #0070ba; text-decoration: none"
+                  >咨询费用支付链接</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
     <div class="solution">
       <div class="container">
         <div class="solution-title-content">
@@ -445,6 +465,34 @@ export default defineComponent({
           color: rgba(21, 38, 65, 0.8);
           line-height: 22px;
         }
+      }
+    }
+  }
+}
+.qr-link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 100%;
+  position: relative;
+
+  .qr-code {
+    img {
+      width: 150px;
+      height: 150px;
+      margin-right: 20px;
+    }
+  }
+
+  .link {
+    a {
+      font-size: 18px;
+      color: #0070ba;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
       }
     }
   }
