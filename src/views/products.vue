@@ -23,9 +23,13 @@
           </div>
           <div class="feature-desc">
             <div class="feature-item">
-              <img src="../assets/images/h.png" alt="" />
               <div class="text">
                 <h3>产品一 咨询费</h3>
+                <p>150美元</p>
+                <p>
+                  这笔费用涵盖了初步的咨询服务，包括对您的问题进行深入分析以及提供专业建议。如果您需要进一步的服务或更长时间的咨询，可能会产生额外费用。我们的目标是为您提供最具价值的建议，帮助您做出明智的决策。
+                </p>
+                <p></p>
                 <div class="contact-container">
                   <div class="qr-code">
                     <img src="../assets/images/fee_qr.png" alt="QR Code" />
@@ -47,24 +51,27 @@
               </div>
             </div>
             <div class="feature-item">
-              <img src="../assets/images/y.png" />
               <div class="text">
                 <h3>产品二 NIW写作</h3>
-                <p></p>
+                <p>
+                  NIW写作是一款专为申请国家利益豁免（NIW）项目的申请者设计的专业写作服务。我们的团队由资深专家组成，能够帮助您撰写强有力的申请文书，展现您的独特背景和专业技能。该服务不仅包括文书写作，还提供个性化的反馈和修订建议，以确保文书符合最高标准。我们的目标是让您的申请脱颖而出，增加获得豁免批准的机会。
+                </p>
               </div>
             </div>
             <div class="feature-item">
-              <img src="../assets/images/C.png" />
               <div class="text">
                 <h3>产品三 EB1A写作</h3>
-                <p></p>
+                <p>
+                  EB1A写作服务旨在为申请杰出人才移民（EB1A）的客户提供定制化的文书撰写支持。我们深知EB1A申请对申请者的成就要求极高，因此我们团队专注于帮助您突出学术、职业、或艺术领域的卓越成就。通过细致打磨的推荐信、个人陈述以及相关文件，我们帮助您最大化展示个人优势，确保您的材料符合EB1A的严格标准，提升您的成功率。
+                </p>
               </div>
             </div>
             <div class="feature-item">
-              <img src="../assets/images/C.png" />
               <div class="text">
                 <h3>产品四 EB1B写作</h3>
-                <p></p>
+                <p>
+                  EB1B写作服务专为具有杰出研究或教学成就的客户设计，帮助他们申请杰出教授或研究人员移民（EB1B）。我们的团队精通EB1B申请要求，能够为您量身定制推荐信、研究计划以及个人陈述，确保您的学术贡献和专业成就得到充分展现。无论您是从事科研、教学，还是管理大型项目，我们都会帮助您撰写最具说服力的材料，增强您的申请竞争力，提高申请成功的几率。
+                </p>
               </div>
             </div>
           </div>
