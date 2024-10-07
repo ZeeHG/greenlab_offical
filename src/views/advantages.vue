@@ -10,6 +10,7 @@
       <div class="header-tabs">
         <div class="tab" @click="goToHomepage">公司概况</div>
         <div class="tab" @click="goToServices">主营业务</div>
+        <div class="tab" @click="goToProducts">产品</div>
         <div class="tab" @click="goToAdvantagesProcess">知学优势</div>
         <div class="tab" @click="goTocasetudies">经典案例&评价</div>
       </div>
@@ -145,7 +146,7 @@
                       >定制最适合您的移民方案：</span
                     >
                   </p>
-                  <ul style="padding-left: 10px; ">
+                  <ul style="padding-left: 10px">
                     <li>行业经验5+年</li>
                     <li>手握20+绿卡申请成功案例</li>
                     <li>TOP30名校资深博士</li>
@@ -166,7 +167,7 @@
                       >个性化定制客户文书</span
                     >，包括：
                   </p>
-                  <ul style="padding-left: 10px; ">
+                  <ul style="padding-left: 10px">
                     <li>请愿书PL撰写和润色</li>
                     <li>推荐信撰写和润色</li>
                     <li>SOC撰写和润色等</li>
@@ -174,7 +175,7 @@
                   <p>
                     <span style="color: rgb(255, 85, 0)">更有增值服务：</span>
                   </p>
-                  <ul style="padding-left: 10px; ">
+                  <ul style="padding-left: 10px">
                     <li>推荐人串联</li>
                     <li>背景提升方案设计包含审稿内推等</li>
                   </ul>
@@ -192,7 +193,7 @@
                       >跟进项目和推动进度</span
                     >
                   </p>
-                  <ul style="padding-left: 10px; ">
+                  <ul style="padding-left: 10px">
                     <li>您有疑问，7天24小时及时回复</li>
                     <li>您有不满，班主任收集反馈提供解决方案</li>
                     <li>
@@ -255,7 +256,9 @@ export default defineComponent({
     const goTocasetudies = () => {
       router.push("/case");
     };
-
+    const goToProducts = () => {
+      router.push("/products");
+    };
     const teachers = ref([
       {
         name: "胡老师",
@@ -324,6 +327,7 @@ export default defineComponent({
       goToServices,
       goToAdvantagesProcess,
       goTocasetudies,
+      goToProducts,
       teachers,
     };
   },
@@ -354,7 +358,7 @@ export default defineComponent({
     justify-content: center;
     align-items: center;
     gap: 80px;
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     line-height: 25px;
     font-family: "Helvetica-Medium";

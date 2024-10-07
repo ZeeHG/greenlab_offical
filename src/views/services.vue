@@ -10,6 +10,7 @@
       <div class="header-tabs">
         <div class="tab" @click="goToHomepage">公司概况</div>
         <div class="tab" @click="goToServices">主营业务</div>
+        <div class="tab" @click="goToProducts">产品</div>
         <div class="tab" @click="goToAdvantagesProcess">知学优势</div>
         <div class="tab" @click="goTocasetudies">经典案例&评价</div>
       </div>
@@ -186,12 +187,16 @@ export default defineComponent({
     const goTocasetudies = () => {
       router.push("/case");
     };
+    const goToProducts = () => {
+      router.push("/products");
+    };
 
     return {
       goToHomepage,
       goToServices,
       goToAdvantagesProcess,
       goTocasetudies,
+      goToProducts,
       currentTab,
       showEb1a,
       showNiw,
@@ -224,7 +229,7 @@ export default defineComponent({
     justify-content: center;
     align-items: center;
     gap: 80px;
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     line-height: 25px;
     font-family: "Helvetica-Medium";
@@ -757,44 +762,42 @@ export default defineComponent({
       text-align: center;
     }
     .feature-alt {
-    padding: 40px 20px;
+      padding: 40px 20px;
 
-    .additional-services {
-      flex-direction: column;
-      .service-item {
-        margin-right: 0;
-        margin-bottom: 60px;
-        padding: 60px;
+      .additional-services {
+        flex-direction: column;
+        .service-item {
+          margin-right: 0;
+          margin-bottom: 60px;
+          padding: 60px;
+        }
       }
-    }
-    .title {
-      text-align: center;
-      font-family: "Montserrat-Bold";
-      font-weight: 700;
-      font-size: 60px;
-      color: #000;
-      line-height: 60px;
-      margin-bottom: 0;
-    }
-
-    .feature-desc-alt {
-      padding: 20px 0;
-      text-align: center;
-      padding-left: 0;
-      padding-right: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .content-title,
-      .title,
-      .content {
+      .title {
         text-align: center;
+        font-family: "Montserrat-Bold";
+        font-weight: 700;
+        font-size: 60px;
+        color: #000;
+        line-height: 60px;
+        margin-bottom: 0;
+      }
+
+      .feature-desc-alt {
+        padding: 20px 0;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .content-title,
+        .title,
+        .content {
+          text-align: center;
+        }
       }
     }
   }
-  }
-
-  
 }
 </style>

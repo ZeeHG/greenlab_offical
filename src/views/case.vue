@@ -10,6 +10,7 @@
       <div class="header-tabs">
         <div class="tab" @click="goToHomepage">公司概况</div>
         <div class="tab" @click="goToServices">主营业务</div>
+        <div class="tab" @click="goToProducts">产品</div>
         <div class="tab" @click="goToAdvantagesProcess">知学优势</div>
         <div class="tab" @click="goTocasetudies">经典案例&评价</div>
       </div>
@@ -17,7 +18,7 @@
     <div class="case">
       <div class="container">
         <div class="title-container">
-          <div class="title" >典型成功案例</div>
+          <div class="title">典型成功案例</div>
         </div>
         <div class="case-tab-content">
           <Swiper
@@ -186,7 +187,7 @@ export default defineComponent({
         type: "申请类型：NIW",
         backgroundUpgrade: "Empty",
         desc: [
-         "客户类型：科研型",
+          "客户类型：科研型",
           "本硕博专业及职业：",
           "  本科：环境工程（国内某211）",
           "  硕士：环境工程（国内某211）",
@@ -381,6 +382,9 @@ export default defineComponent({
     const goTocasetudies = () => {
       router.push("/case");
     };
+    const goToProducts = () => {
+      router.push("/products");
+    };
 
     onMounted(() => {
       if (window.innerWidth > 768) {
@@ -408,6 +412,7 @@ export default defineComponent({
       goToServices,
       goToAdvantagesProcess,
       goTocasetudies,
+      goToProducts,
       changeActiveTab,
       modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay],
       isSmallScreen,
@@ -442,7 +447,7 @@ export default defineComponent({
     justify-content: center;
     align-items: center;
     gap: 80px;
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     line-height: 25px;
     font-family: "Helvetica-Medium";
@@ -676,7 +681,7 @@ export default defineComponent({
     padding: 40px 20px;
 
     .title-container {
-     height: auto;
+      height: auto;
       margin-bottom: 24px;
       margin-top: 100px;
     }

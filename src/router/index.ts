@@ -3,6 +3,7 @@ import Home from "../views/HomeView.vue";
 import Case from "../views/case.vue";
 import Advantages from "../views/advantages.vue";
 import Services from "../views/services.vue";
+import Products from "../views/products.vue";
 
 const routes = [
   { path: "/", name: "Home", component: Home },
@@ -20,6 +21,11 @@ const routes = [
     path: "/services",
     name: "Services",
     component: Services,
+  },
+  {
+    path: "/products",
+    name: "Products",
+    component: Products,
   },
 ];
 

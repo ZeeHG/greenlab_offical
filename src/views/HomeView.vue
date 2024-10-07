@@ -10,6 +10,7 @@
       <div class="header-tabs">
         <div class="tab" @click="goToHomepage">公司概况</div>
         <div class="tab" @click="goToServices">主营业务</div>
+        <div class="tab" @click="goToProducts">产品</div>
         <div class="tab" @click="goToAdvantagesProcess">知学优势</div>
         <div class="tab" @click="goTocasetudies">经典案例&评价</div>
       </div>
@@ -184,12 +185,16 @@ export default defineComponent({
     const goTocasetudies = () => {
       router.push("/case");
     };
+    const goToProducts = () => {
+      router.push("/products");
+    };
 
     return {
       goToHomepage,
       goToServices,
       goToAdvantagesProcess,
       goTocasetudies,
+      goToProducts,
     };
   },
 });
@@ -219,7 +224,7 @@ export default defineComponent({
     justify-content: center;
     align-items: center;
     gap: 80px;
-    font-size: 20px;
+    font-size: 18px;
     color: black;
     line-height: 25px;
     font-family: "Helvetica-Medium";
